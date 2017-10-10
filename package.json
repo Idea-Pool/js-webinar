@@ -4,7 +4,8 @@
   "description": "Tasks for JS webinar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:module-1": "mocha module-1/test/*.spec.js",
+    "test:module-2": "mocha module-2/test/*.spec.js"
   },
   "repository": {
     "type": "git",
