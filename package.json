@@ -1,0 +1,24 @@
+{
+  "name": "js-webinar",
+  "version": "1.0.0",
+  "description": "Tasks for JS webinar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szikszail/js-webinar.git"
+  },
+  "author": "Laszlo Szikszai <Laszlo_Szikszai@epam.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/szikszail/js-webinar/issues"
+  },
+  "homepage": "https://github.com/szikszail/js-webinar#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "jasmine": "^2.8.0",
+    "mocha": "^4.0.1"
+  }
+}
