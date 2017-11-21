@@ -4,7 +4,7 @@ Tasks of JS webinar.
 
 ## Requirements
 
-* NodeJS 6+
+* NodeJS 8 (6 is also supported)
 
 ## Setup
 
