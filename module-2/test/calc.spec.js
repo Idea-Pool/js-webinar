@@ -43,11 +43,11 @@ describe('calc', () => {
         expect(result.v).to.equal(30);
     });
     it('should divide the actual value by the given value', () => {
-        const result = calc(10).divide(2);
+        const result = calc(10).div(2);
         expect(result.v).to.equal(5);
     });
     it('should throw Error when dividing the actual value by zero given value', () => {
-        expect(() => { calc(5).divide(0) }).to.throw(Error, 'Division by 0 is not possible!');
+        expect(() => { calc(5).div(0) }).to.throw(Error, 'Division by 0 is not possible!');
     });
     it('should find the modulo of the actual value by the given value', () => {
         const result = calc(10).modulo(5);
@@ -57,7 +57,7 @@ describe('calc', () => {
         const result = calc(1).add(4)
             .minus(4)
             .times(42)
-            .divide(42)
+            .div(42)
             .sqrt()
             .modulo(2);
         expect(result.v).to.equal(1);
