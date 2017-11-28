@@ -1,6 +1,7 @@
 'use strict';
 
 const calc = require('../calc');
+const expect = require('chai').expect;
 
 describe('calc', () => {
     /*
@@ -17,4 +18,13 @@ describe('calc', () => {
      *     .times(6).v // 24
      */
     // TODO: write test cases to test calculator
+    it('should store the actual value', () => {
+        const result = calc(3);
+        expect(result.v).to.equal(3);
+    });
+    it('should add any value to the actual', () => {
+        const result = calc(3).add(5);
+        expect(result.v).to.equal(8);
+    });
+    it('should decrease the actual value by the given');
 });
