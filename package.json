@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test:module-1": "mocha module-1/test/*.spec.js",
-    "test:module-2": "mocha module-2/test/*.spec.js"
+    "test:module-2": "mocha module-2/test/*.spec.js",
+    "test:module-3": "mocha module-3/test/*.spec.js",
+    "test:module-4": "mocha module-4/test/*.spec.js",
+    "test:module-5": "mocha module-5/test/*.spec.js"
   },
   "repository": {
     "type": "git",

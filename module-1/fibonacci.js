@@ -4,7 +4,7 @@
  * The function returns the nth value of
  * the Fibonacci sequence
  *
- * @param {number} n (n >= 1)
+ * @param {number} n (n >= 0)
  * @returns {number}
  * @throws {Error} Fibonacci number or 0 if any arguments are not proper
  */
@@ -19,6 +19,13 @@ function fibonacci(n) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    if (n < 0) {
+        return 0;
+    }
+    if (n < 2) {
+        return n;
+    }
+    return fibonacci(n-1) + fibonacci(n-2);
 
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
