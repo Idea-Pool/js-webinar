@@ -23,8 +23,15 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
+    if (typeof score !== "number" || isNaN(score) || 100 < score || score < 0) {
+        return 0;
+    }
 
-
+    const scoreIsAbove60 = (score / 60) | 0;
+    const scoreAbove50 = ((score / 10) - 5) | 0;
+    const scoreIs100 = (score / 100) | 0;
+    
+    gradeOfStudent = 1 + (scoreIsAbove60 * (scoreAbove50 - scoreIs100));
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
