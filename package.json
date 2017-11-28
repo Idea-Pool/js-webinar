@@ -4,11 +4,11 @@
   "description": "Tasks for JS webinar",
   "main": "index.js",
   "scripts": {
-    "test:module-1": "mocha module-1/test/*.spec.js",
-    "test:module-2": "mocha module-2/test/*.spec.js",
-    "test:module-3": "mocha module-3/test/*.spec.js",
-    "test:module-4": "mocha module-4/test/*.spec.js",
-    "test:module-5": "mocha module-5/test/*.spec.js"
+    "test:module-1": "mocha module-1/test/*.spec.js -R nyan",
+    "test:module-2": "mocha module-2/test/*.spec.js -R nyan",
+    "test:module-3": "mocha module-3/test/*.spec.js -R nyan",
+    "test:module-4": "mocha module-4/test/*.spec.js -R nyan",
+    "test:module-5": "mocha module-5/test/*.spec.js -R nyan"
   },
   "repository": {
     "type": "git",

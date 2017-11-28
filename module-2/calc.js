@@ -14,6 +14,14 @@ class Calc {
         this.v -= n;
         return this;
     }
+    
+    sqrt() {
+        if (this.v < 0) {
+            throw new Error('Square root of negative values is not possible!');
+        }
+        this.v = Math.sqrt(this.v);
+        return this;
+    }
 
     times(n) {
         this.v *= n;
