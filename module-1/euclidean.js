@@ -18,8 +18,19 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
+    if (typeof a !== "number" || typeof b !== "number" || isNaN(a) || isNaN(b) || a <= 0 || b <= 0) {
+        return 0;
+    }
 
-
+    while (a !== b) {
+        if (a > b) {
+            a -= b;
+        } else {
+            b -= a;
+        }
+    }
+    
+    gcd = a;
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
