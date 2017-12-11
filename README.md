@@ -47,5 +47,5 @@ To solve the tasks of each module first you should read carefully both the docum
 
    The implementation of the suites and cases is not the main task in this module, but it can be done.
 1. In this module the task is to create Element, Elements, Layout and HomePage classes according to what is written in the presentation.
-1. _TBD_
+1. In this module the task is to create the functions based on the documentation comments.
 1. _TBD_

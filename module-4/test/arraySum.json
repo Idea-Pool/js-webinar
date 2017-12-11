@@ -1,0 +1,22 @@
+[
+    {
+        "arguments": [12],
+        "result": 0
+    },
+    {
+        "arguments": [[]],
+        "result": 0
+    },
+    {
+        "arguments": [[1,2,3]],
+        "result": 6
+    },
+    {
+        "arguments": [[1, 2, "3", 4, false, 6]],
+        "result": 13
+    },
+    {
+        "arguments": [[1, 2, [[[[[3]], [4, [[[["12", 2]]]]]]]]]],
+        "result": 12
+    }
+]
