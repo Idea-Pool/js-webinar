@@ -5,18 +5,18 @@
     },
     {
         "arguments": ["Hello World"],
-        "result": "helloWorld"
+        "result": "HelloWorld"
     },
     {
         "arguments": [" Hello    World  "],
-        "result": "helloWorld"
+        "result": "HelloWorld"
     },
     {
         "arguments": ["Hello World! What is up?"],
-        "result": "helloWorldWhatIsUp"
+        "result": "HelloWorldWhatIsUp"
     },
     {
         "arguments": ["Hello World ! 123 What is up?"],
-        "result": "helloWorld123WhatIsUp"
+        "result": "HelloWorld123WhatIsUp"
     }
 ]
