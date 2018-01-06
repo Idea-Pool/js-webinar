@@ -26,5 +26,31 @@ describe('calc', () => {
         const result = calc(3).add(5);
         expect(result.v).to.equal(8);
     });
-    it('should decrease the actual value by the given');
+    it('should decrease the actual value by the given', () => {
+        const result = calc(3).minus(2);
+        expect(result.v).to.equal(1);
+    });
+    it('should determine square root of the current value', () => {
+        const result = calc(4).sqrt();
+        expect(result.v).to.equal(2);
+    });
+    it('should multiply the value by the given', () => {
+        const result = calc(3).times(10);
+        expect(result.v).to.equal(30);
+    });
+    it('should divide the value by the given', () => {
+        const result = calc(10).divide(2);
+        expect(result.v).to.equal(5);
+    });
+    it('should compute module by the given divider', () => {
+        const result = calc(10).modulo(5);
+        expect(result.v).to.equal(0);
+    });
+    it('should throw error if 0 is the divider', () => {
+        expect(() => calc(5).divide(0)).to.throw;
+    });
+    it('should process complex operations', () => {
+        const result = calc(3).add(4).minus(3).times(6);
+        expect(result.v).to.equal(24);
+    });
 });

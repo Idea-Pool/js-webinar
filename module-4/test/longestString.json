@@ -9,7 +9,7 @@
     },
     {
         "arguments": [["foo", "arm"]],
-        "result": "arm"
+        "result": "foo"
     },
     {
         "arguments": [[true, "hello", "world"]],
