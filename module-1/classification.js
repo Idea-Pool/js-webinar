@@ -23,7 +23,26 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    
+    switch(true){
+        case (score >= 0 && score <= 59):
+        gradeOfStudent = 1;
+        break;
+        case (score >= 60 && score <= 69):
+        gradeOfStudent = 2;
+        break;
+        case (score >= 70 && score <= 79):
+        gradeOfStudent = 3;
+        break;
+        case (score >= 80 && score <= 89):
+        gradeOfStudent = 4;
+        break;
+        case (score >= 90 && score <= 100):
+        gradeOfStudent = 5;
+        break;
+        default:
+        gradeOfStudent = 0
+    }
 
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;

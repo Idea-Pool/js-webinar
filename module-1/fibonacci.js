@@ -18,8 +18,21 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    let firstNumber = 0;
+    let secondNumber = 1;
+    if (n >= 2) {
+        for (let i=2; i<=n; i++){
+            let fibNumber = firstNumber + secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = fibNumber;
+        }
+        nThFibonacci = secondNumber;
+    } else if (n <= 0){
+        nThFibonacci = 0;
+    } else if (n=1){
+        nThFibonacci = 1;
+    }
+  
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }

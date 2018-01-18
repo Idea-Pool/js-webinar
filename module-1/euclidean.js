@@ -18,9 +18,25 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if(a >= b && a > 0 && b > 0){
+        gcd = gcdFinder(a,b);
+     } else if (b >= a && a > 0 && b > 0){
+        gcd = gcdFinder(b,a);
+     }else {
+         gcd = 0;
+     }
+      
     // ...AND THIS COMMENT LINE!
     return gcd;
+}
+
+function gcdFinder(a,b){
+    while (a%b!==0){
+        let temp = a
+        a = b;
+        b = temp%b;
+      }
+
+      return b;
 }
 module.exports = euclidean;
