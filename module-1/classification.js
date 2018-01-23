@@ -24,6 +24,11 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    if (score > 100 || score < 0) {
+        gradeOfStudent = 0;
+    } else {
+        gradeOfStudent = Math.min(5, Math.max(1, Math.floor(score/10) - 4));
+    }
 
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;

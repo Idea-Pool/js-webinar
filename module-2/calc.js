@@ -20,7 +20,7 @@ class Calc {
         return this;
     }
 
-    div(n) {
+    divide(n) {
         if (n === 0) {
             throw new Error('Division by 0 is not possible!');
         }
@@ -30,6 +30,11 @@ class Calc {
 
     modulo(n) {
         this.v %= n;
+        return this;
+    }
+
+    sqrt() {
+        this.v = Math.sqrt(this.v);
         return this;
     }
 

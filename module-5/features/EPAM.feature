@@ -7,6 +7,8 @@ Feature: EPAM site
     Given EPAM Career site is opened
     Then EPAM Career site should be opened
     And The search form should be visible
-    And The non existing element should be hidden
+    And The non existing element should be
+
+    When I click on "Menu > Careers" element
 
     # TODO

@@ -27,8 +27,12 @@ class Element {
         if (this.children[name]) {
             return this.children[name].get();
         }
-        // TODO: handle case of nested children
-        // TODO: create test for it
+        for (let childName in this.children) {
+            const child = this.children[childName].get(name);
+            if (child) {
+                return child;
+            }
+        }
         throw new Error('There is no child like: ' + name);
     }
 }
