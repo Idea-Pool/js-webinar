@@ -20,6 +20,14 @@ class Calc {
         return this;
     }
 
+    sqrt() {
+        if (this.v < 0) {
+            throw new Error('Square root of negative value cannot be determined!');
+        }
+        this.v = Math.sqrt(this.v);
+        return this;
+    }
+
     div(n) {
         if (n === 0) {
             throw new Error('Division by 0 is not possible!');

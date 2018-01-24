@@ -13,18 +13,10 @@ describe('calc', () => {
      * calc(10).divide(2).v // 5
      * calc(10).mod(5).v // 0
      * calc(5).divide(0) // throw error
+     * calc(-3).sqrt() // throw error
      * calc(3).add(4)
      *     .minus(3)
      *     .times(6).v // 24
      */
     // TODO: write test cases to test calculator
-    it('should store the actual value', () => {
-        const result = calc(3);
-        expect(result.v).to.equal(3);
-    });
-    it('should add any value to the actual', () => {
-        const result = calc(3).add(5);
-        expect(result.v).to.equal(8);
-    });
-    it('should decrease the actual value by the given');
 });
