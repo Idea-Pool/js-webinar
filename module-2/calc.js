@@ -28,7 +28,7 @@ class Calc {
         return this;
     }
 
-    div(n) {
+    divide(n) {
         if (n === 0) {
             throw new Error('Division by 0 is not possible!');
         }
