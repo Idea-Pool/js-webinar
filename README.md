@@ -56,28 +56,28 @@ First of all, tests can be used to check whether the solutions are good or not. 
 
 To have a forked repository and create pull request, the following steps could be done:
 
-1. Create a GitHub account.
+1. Create a **GitHub account**.
 1. Fork the repository, using the **Fork** button, which can be found in the top-right corner.
-1. Clone your instance of the forked repository to your computer:
+1. **Clone your instance** of the forked repository to your computer:
 
     ```
     $> git clone https://github.com/<your-user-name>/js-webinar.git
     $> cd js-webinar
     ```
 
-1. To get updates and latest version, you should set the original repository (this) as another remote:
+1. To get updates and latest version, you should **set the original repository as another remote**:
 
     ```
     $> git remote add source https://github.com/szikszail/js-webinar.git
     ```
 
-1. Anytime, you want to update your code with latest changes on the original repository (this), the following command should be executed:
+1. Anytime, you want to **update your code with latest changes on the original repository**, the following command should be executed:
 
     ```
     $> git pull source
     ```
 
-1. If you have done any change, you can commit and push it to your repository:
+1. If you have done any change, you can **commit and push** it **to your repository**:
 
     ```
     $> git add .
