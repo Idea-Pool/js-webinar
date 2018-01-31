@@ -34,7 +34,14 @@ describe.only('calc', () => {
         expect(c.v).to.equal(8);
     });
 
-    it('should support substract operation');
+    it('should support substract operation', () => {
+        //Given
+        let c = calc(8);
+        //When
+        c = c.minus(5);
+        //Then
+        expect(c.v).to.equal(3);
+    });
 
     //...
 
