@@ -18,9 +18,16 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a>0 && b>0) {
+    while (a!=0&&b!=0) {
+        if(a>b){a%=b;}
+        else {b%=a;}
+        gcd=a+b;
+    }
+}
+else {gcd=0;}
+  
     // ...AND THIS COMMENT LINE!
-    return gcd;
+   return gcd;
 }
 module.exports = euclidean;
