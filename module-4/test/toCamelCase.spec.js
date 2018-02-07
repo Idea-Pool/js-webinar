@@ -4,7 +4,7 @@ const toCamelCase = require('../toCamelCase');
 const expect = require('chai').expect;
 const testData = require('./toCamelCase.json');
 
-describe.only('Module 4 - toCamelCase', () => {
+describe('Module 4 - toCamelCase', () => {
     it('should be a function', () => {
         expect(toCamelCase).to.be.instanceOf(Function);
     });

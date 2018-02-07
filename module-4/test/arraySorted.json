@@ -1,0 +1,61 @@
+[
+    {
+        "arguments": [
+            []
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [1, 2, 3]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            ["hello", "world"]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            ["world", "hello"]
+        ],
+        "result": false
+    },
+    {
+        "arguments": [
+            ["Hello", "hELLO"]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [1, 11, 12, 2, 3]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            ["he llo", "h ello"]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            ["Hello!", "He!llo"],
+            "!"
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [
+                "Hello World! How are you? Fine!",
+                "Hello World How! Are you fine?"
+            ],
+            "!?"
+        ],
+        "result": true
+    }
+]

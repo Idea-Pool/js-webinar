@@ -1,0 +1,51 @@
+[
+    {
+        "arguments": [
+            [1, 2, 3],
+            [1, 2, 3]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [],
+            []
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [1, 2, 3],
+            [2, 3, 1]
+        ],
+        "result": false
+    },
+    {
+        "arguments": [
+            [1, 2, 3],
+            [1, 2]
+        ],
+        "result": false
+    },
+    {
+        "arguments": [
+            [1, 2, 3],
+            [1, 2, 4]
+        ],
+        "result": false
+    },
+    {
+        "arguments": [
+            [1, 2, ["Hello", [[[[[4]]]]]]],
+            [1, 2, ["Hello", [[[[[4]]]]]]]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [1, "2", [[[[[4]]]]]],
+            [1, 2, [[[[[4]]]]]]
+        ],
+        "result": false
+    }
+]
