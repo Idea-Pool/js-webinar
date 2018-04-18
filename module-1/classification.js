@@ -24,7 +24,6 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
-
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }

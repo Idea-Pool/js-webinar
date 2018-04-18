@@ -5,8 +5,7 @@
  * the Fibonacci sequence
  *
  * @param {number} n (n >= 0)
- * @returns {number}
- * @throws {Error} Fibonacci number or 0 if any arguments are not proper
+ * @returns {number} Fibonacci number or 0 if any arguments are not proper
  */
 function fibonacci(n) {
     let nThFibonacci;
@@ -18,7 +17,6 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
 
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
