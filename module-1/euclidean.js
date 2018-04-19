@@ -18,8 +18,7 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    gcd = a<0||b<0 || typeof a != "number" || typeof b != "number" ? 0 : a==b ? a : a > b ? euclidean(b, a-b) : euclidean(a, b-a);
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
