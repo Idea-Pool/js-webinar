@@ -23,6 +23,7 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
+    gradeOfStudent = (score <0) ? 0 :((score > 100) ? 0 :((score>=90) ? 5 : ((score>=80) ? 4 : ((score>=70) ? 3 : ((score >=60) ? 2: 1))))) 
 
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
