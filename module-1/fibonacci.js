@@ -17,7 +17,7 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    n < 0 ? nThFibonacci = 0 : n < 2 ? nThFibonacci = n : nThFibonacci = fibonacci(n - 1) + fibonacci (n - 2)
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }
