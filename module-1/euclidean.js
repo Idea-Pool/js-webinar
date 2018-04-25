@@ -9,18 +9,31 @@
  * @returns {number} GCD or 0 if any arguments are not proper
  */
 function euclidean(a, b) {
-    let gcd;
-    /*
-     * Your task is to compute the greatest common divisor of
-     * the numbers given in a and b variables, using the
-     * Euclidean algorithm (https://en.wikipedia.org/wiki/Euclidean_algorithm).
-     * If you have the result, assign it to the variable, called gcd.
-     * Also take into consideration the documentation of the function!
-     */
-    // PLACE YOUR CODE BETWEEN THIS...
-
-
-    // ...AND THIS COMMENT LINE!
-    return gcd;
+  let gcd;
+  /*
+   * Your task is to compute the greatest common divisor of
+   * the numbers given in a and b variables, using the
+   * Euclidean algorithm (https://en.wikipedia.org/wiki/Euclidean_algorithm).
+   * If you have the result, assign it to the variable, called gcd.
+   * Also take into consideration the documentation of the function!
+   */
+  // PLACE YOUR CODE BETWEEN THIS...
+  if (a === 0) {
+    gcd = b;
+  } else if (a < 0 || b < 0) {
+    console.log('test2')
+    gcd = 0;
+  } else {
+    while (b !== 0) {
+      if (a > b) {
+        a = a - b;
+      } else {
+        b = b - a;
+      }
+    }
+    gcd = a;
+  }
+  // ...AND THIS COMMENT LINE!
+  return gcd;
 }
 module.exports = euclidean;
