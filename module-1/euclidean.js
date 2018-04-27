@@ -19,7 +19,7 @@ function euclidean(a, b) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
-    (a < 0 || b < 0) ? gcd = 0 : b == 0 ? gcd = a : gcd = euclidean(b, a % b);
+    gcd = (a < 0 || b < 0) ? 0 : b == 0 ? a : euclidean(b, a % b);
 
     // ...AND THIS COMMENT LINE!
     return gcd;
