@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * The function determines the greatest common divisor or
+ * The function determines the greatest common divisor of
  * the given two numbers.
  *
  * @param {number} a (a > 0)
@@ -19,6 +19,7 @@ function euclidean(a, b) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    gcd = (a < 0 || b < 0) ? 0 : b == 0 ? a : euclidean(b, a % b);
 
     // ...AND THIS COMMENT LINE!
     return gcd;

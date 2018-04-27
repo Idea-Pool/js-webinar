@@ -24,6 +24,19 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    gradeOfStudent = score < 0 || score > 100
+        ? 0
+        : score >= 0 && score < 60
+            ? 1
+            : score >= 60 && score < 70
+                ? 2
+                : score >= 70 && score < 80
+                    ? 3
+                    : score >= 80 && score < 90
+                        ? 4
+                        : 5;
+
+
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
