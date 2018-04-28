@@ -18,6 +18,16 @@ function fibonacci(n) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    // if (n <= 0) {
+    //     nThFibonacci = 0;
+    // } else if (n === 1 || n === 2) {
+    //     nThFibonacci = 1;
+    // } else {
+    //     nThFibonacci = fibonacci(n - 1) + fibonacci(n - 2);
+    // }
+
+    nThFibonacci = (n <= 0) ? 0 : (n === 1 || n === 2) ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }
