@@ -17,7 +17,7 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-    nThFibonacci = n < 0 || n % 1 !==0 ? 0 : n < 2 ? n : fibonacci(n-1) + fibonacci(n-2);
+    nThFibonacci = !Number.isInteger(n) || n < 0 ? 0 : n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }

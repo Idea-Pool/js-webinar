@@ -18,7 +18,17 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-    gcd = a<0||b<0 || typeof a != "number" || typeof b != "number" ? 0 : a==b ? a : a > b ? euclidean(b, a-b) : euclidean(a, b-a);
+    if (!Number.isInteger(a) || !Number.isInteger(b) || a < 0 || b < 0) {
+        return 0;
+    }
+    while (a != b) {
+        if (a > b) {
+            a = a - b;
+        } else {
+            b = b - a;
+        }
+    }
+    gcd = a;
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
