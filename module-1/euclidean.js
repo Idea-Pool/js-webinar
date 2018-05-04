@@ -19,8 +19,8 @@ function euclidean(a, b) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+	return (a < 0 || b < 0) ? 0 : (b == 0 ? a : euclidean( b, a%b));
 
     // ...AND THIS COMMENT LINE!
-    return gcd;
 }
 module.exports = euclidean;
