@@ -8,7 +8,6 @@
  * @returns {number} Fibonacci number or 0 if any arguments are not proper
  */
 function fibonacci(n) {
-  let nThFibonacci = 1;
   /*
    * Your task is to calculate the nth value of the
    * Fibonacci sequence.
@@ -17,20 +16,14 @@ function fibonacci(n) {
    * Also take into consideration the documentation of the function!
    */
   // PLACE YOUR CODE BETWEEN THIS...
-  if (n <= 0) {
-    nThFibonacci = 0;
-  } else if (n > 2) {
-    let index = 2;
-    let current = 1;
-    let previous = 1;
-    while (index !== n) {
-      nThFibonacci = current + previous;
-      previous = current;
-      current = nThFibonacci;
-      index++;
-    }
+  if (n < 0) {
+    return 0;
+  }
+  if (n <= 1) {
+    return n;
+  } else {
+    return fibonacci(n - 1) + fibonacci(n - 2);
   }
   // ...AND THIS COMMENT LINE!
-  return nThFibonacci;
 }
 module.exports = fibonacci;
