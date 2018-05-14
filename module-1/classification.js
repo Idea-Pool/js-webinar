@@ -14,16 +14,21 @@
  */
 function grade(score) {
     let gradeOfStudent;
-    /*
-     * Your task is to calculate the grade of the student
-     * based on his/her score which can be found in the
-     * score variable and those rules can be found in the
-     * documentation of the function.
-     * Store the grade in the gradeOfStudent variable.
-     * Also take into consideration the documentation of the function!
-     */
-    // PLACE YOUR CODE BETWEEN THIS...
-
+    switch (true) {        
+        case score < 0:
+        case score > 100: gradeOfStudent = 0;
+            break;
+        case score >= 90: gradeOfStudent = 5;
+            break;        
+        case score >= 80: gradeOfStudent = 4;
+            break;      
+        case score >= 70: gradeOfStudent = 3;
+            break;        
+        case score >= 60: gradeOfStudent = 2;
+            break;    
+        default:
+            gradeOfStudent = 1;
+    }
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }

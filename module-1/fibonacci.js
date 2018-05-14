@@ -9,15 +9,17 @@
  */
 function fibonacci(n) {
     let nThFibonacci;
-    /*
-     * Your task is to calculate the nth value of the
-     * Fibonacci sequence.
-     * https://en.wikipedia.org/wiki/Fibonacci_number
-     * Store the value in the nThFibonacci variable.
-     * Also take into consideration the documentation of the function!
-     */
-    // PLACE YOUR CODE BETWEEN THIS...
-
+    if (n < 0) {
+        return nThFibonacci = 0;
+    }
+    else {
+        if (n < 2) {
+            return nThFibonacci = n;
+        }
+        else {
+            nThFibonacci = fibonacci(n - 2) + fibonacci(n - 1);
+        }
+    }
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }
