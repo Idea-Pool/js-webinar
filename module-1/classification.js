@@ -23,19 +23,20 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-    if (score > 100 || score < 0) {
-        gradeOfStudent = 0;
-    } else if (score >= 90) {
-        gradeOfStudent = 5;
-    } else if (score < 90 && score >= 80) {
-        gradeOfStudent = 4;
-    } else if (score < 80 && score >= 70) {
-        gradeOfStudent = 3;
-    } else if (score < 70 && score >= 60) {
-        gradeOfStudent = 2
-    } else {
-        gradeOfStudent = 1;
-    }
+    // if (score > 100 || score < 0) {
+    //     gradeOfStudent = 0;
+    // } else if (score >= 90) {
+    //     gradeOfStudent = 5;
+    // } else if (score < 90 && score >= 80) {
+    //     gradeOfStudent = 4;
+    // } else if (score < 80 && score >= 70) {
+    //     gradeOfStudent = 3;
+    // } else if (score < 70 && score >= 60) {
+    //     gradeOfStudent = 2
+    // } else {
+    //     gradeOfStudent = 1;
+    // }
+    return score < 0 || score > 100 ? 0 : score < 60 ? 1 : score == 100 ? 5 : 1 + grade( score - 10)
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
