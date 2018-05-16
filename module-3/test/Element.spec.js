@@ -12,7 +12,7 @@ describe('Element Class', () => {
     afterEach(() => {
         delete global.element;
     });
-
+ 
     it('should be defined', () => {
         expect(Element).to.be.instanceOf(Function);
     });
