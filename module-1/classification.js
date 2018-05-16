@@ -36,7 +36,19 @@ function grade(score) {
     // } else {
     //     gradeOfStudent = 1;
     // }
-    return score < 0 || score > 100 ? 0 : score < 60 ? 1 : score == 100 ? 5 : 1 + grade( score - 10)
+        if (score > 100 || score < 0) {
+            gradeOfStudent = 0;
+        } else if (score < 60) {
+            gradeOfStudent = 1;
+        } else if (score < 70) {
+            gradeOfStudent = 2;
+        } else if (score < 80) {
+            gradeOfStudent = 3;
+        } else if (score < 90) {
+            gradeOfStudent = 4;
+        } else if (score <= 100) {
+            gradeOfStudent = 5;
+        }
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }

@@ -212,6 +212,15 @@ describe.only('calc', () => {
             // Then
             expect(c.v).to.be.equal(24);
         });
+
+        it ('should perform a complex scenario and the operations can be chained together', () => {
+            // Given
+            const c = calc(3);
+            // When
+            c.add(4).minus(3).times(6);
+            // Then
+            expect(c.v).to.be.equal(24);
+        });
     });
 
 });
