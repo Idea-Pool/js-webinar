@@ -20,8 +20,9 @@ function euclidean(a, b) {
   // PLACE YOUR CODE BETWEEN THIS...
   if (a === 0) {
     gcd = b;
+  } else if (b === 0) {
+    gcd = a;
   } else if (a < 0 || b < 0) {
-    console.log('test2')
     gcd = 0;
   } else {
     while (b !== 0) {
