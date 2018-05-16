@@ -18,8 +18,13 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a < 0) {
+      gcd = 0
+    } else if(b === 0) {
+      gcd = a;
+    } else {
+      gcd = euclidean(b, (a % b));
+    }
     // ...AND THIS COMMENT LINE!
     return gcd;
 }

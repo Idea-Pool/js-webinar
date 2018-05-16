@@ -24,6 +24,32 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    // head-on solution
+    // if ((score >= 90) && (score <= 100)) {
+    //     gradeOfStudent = 5;
+    //   } else if((score >= 80) && (score < 90)) {
+    //     gradeOfStudent = 4;
+    //   } else if ((score >= 70) && (score < 80)) {
+    //     gradeOfStudent = 3;
+    //   } else if((score >= 60) && (score < 70)) {
+    //     gradeOfStudent = 2;
+    //   } else if((score < 60) && (score >= 0)) {
+    //     gradeOfStudent = 1;
+    //   } else if ((score < 0) || (score >= 100)) {
+    //     gradeOfStudent = 0;
+    //   }
+
+
+    // more insolent one
+      if((score < 0) || (score > 100)) {
+        return 0;
+      }
+      gradeOfStudent = 5;
+      
+      if(score < 90) gradeOfStudent--;
+      if(score < 80) gradeOfStudent--;
+      if(score < 70) gradeOfStudent--;
+      if(score < 60) gradeOfStudent--;
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
