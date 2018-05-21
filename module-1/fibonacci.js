@@ -8,17 +8,28 @@
  * @returns {number} Fibonacci number or 0 if any arguments are not proper
  */
 function fibonacci(n) {
-    let nThFibonacci;
-    /*
-     * Your task is to calculate the nth value of the
-     * Fibonacci sequence.
-     * https://en.wikipedia.org/wiki/Fibonacci_number
-     * Store the value in the nThFibonacci variable.
-     * Also take into consideration the documentation of the function!
-     */
-    // PLACE YOUR CODE BETWEEN THIS...
+  // let nThFibonacci;
+  /*
+   * Your task is to calculate the nth value of the
+   * Fibonacci sequence.
+   * https://en.wikipedia.org/wiki/Fibonacci_number
+   * Store the value in the nThFibonacci variable.
+   * Also take into consideration the documentation of the function!
+   */
+  // PLACE YOUR CODE BETWEEN THIS...
+  // if (n == 0) return 0;
+  // if (n == 1) return 1;
+  // nThFibonacci = 0;
+  // for (let index = 0; index <= n; index++) {
+  //   nThFibonacci += index;
+  // }
 
-    // ...AND THIS COMMENT LINE!
-    return nThFibonacci;
+  if (n <= 0) return 0;
+  if (n == 1) return n;
+  else
+    return fibonacci(n - 1) + fibonacci(n - 2);
+
+  // ...AND THIS COMMENT LINE!
+  // return nThFibonacci;
 }
 module.exports = fibonacci;

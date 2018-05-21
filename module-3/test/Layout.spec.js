@@ -3,6 +3,7 @@
 const ElementFinder = require('./mock/ElementFinder');
 const Browser = require('./mock/Browser');
 const Layout = require('../Layout');
+const Element = require('../Element');
 const expect = require('chai').expect;
 
 describe('Layout Class', () => {
@@ -50,7 +51,7 @@ describe('Layout Class', () => {
         });
 
         it('should throw error if parent is set', () => {
-            const element = new Layout('Title', {css: 'h1'});
+            const element = new Element('Title', {css: 'h1'});
             const page = new Layout('Home', 'http://epam.com', {css: 'body'});
 
             expect(page.setParent).not.to.be.undefined;
