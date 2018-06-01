@@ -21,8 +21,7 @@ class Layout extends Element {
         super.addChildren(child);
     }
     load() {
-        browser = new Browser();
-        return browser.get(this.url);
+       return this.url;
     }
 
 }
