@@ -2,13 +2,12 @@
   "name": "js-webinar",
   "version": "1.0.0",
   "description": "Tasks for JS webinar",
-  "main": "index.js",
   "scripts": {
     "test:module-1": "mocha module-1/test/*.spec.js",
     "test:module-2": "mocha module-2/test/*.spec.js",
     "test:module-3": "mocha module-3/test/*.spec.js",
     "test:module-4": "mocha module-4/test/*.spec.js",
-    "test:module-5": "cucumberjs module-5/features --require module-5/step_definitions --format pretty --tags ~@wip"
+    "test:module-5": "cucumber-js module-5/features/EPAM.feature --require module-5/step_definitions/*.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +20,10 @@
   },
   "homepage": "https://github.com/szikszail/js-webinar#readme",
   "dependencies": {
-    "chai": "^4.1.2",
-    "cucumber": "^1.3.3",
-    "jasmine": "^2.8.0",
-    "mocha": "^4.0.1",
-    "sinon": "^4.2.2"
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "jasmine": "^3.3.1",
+    "mocha": "^6.0.2",
+    "sinon": "^7.2.7"
   }
 }
