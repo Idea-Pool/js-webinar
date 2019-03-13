@@ -17,7 +17,19 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    if (n <= 0){
+        return 0;
+    } else if (n === 1 || n === 2){
+        return 1;
+    } else {
+        var varfirst = 1;
+        var varsecond = 1;
+        for (var x = 2; x < n; x++){
+            nThFibonacci = varfirst + varsecond;
+            varfirst = varsecond;
+            varsecond = nThFibonacci;
+            }
+        }
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }
