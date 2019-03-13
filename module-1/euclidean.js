@@ -19,6 +19,18 @@ function euclidean(a, b) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    if (a <= 0 || b <= 0) {
+        gcd = 0;
+    } else {
+        while (a != b) {
+            if (a < b) {
+                b -= a;
+            } else {
+                a -= b;
+            }
+        }
+        gcd = a;
+    }
 
     // ...AND THIS COMMENT LINE!
     return gcd;
