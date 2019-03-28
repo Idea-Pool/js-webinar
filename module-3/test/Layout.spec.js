@@ -1,6 +1,7 @@
 'use strict';
 
 const ElementFinder = require('./mock/ElementFinder');
+const Element = require('../Element');
 const Browser = require('./mock/Browser');
 const Layout = require('../Layout');
 const expect = require('chai').expect;
