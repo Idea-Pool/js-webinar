@@ -41,6 +41,15 @@ describe.only('The methods of the calculator should match the requirements', () 
             // Then
             expect(current.v).to.equal(10);
         });
+
+        it("should add a negative number ot the positive number", () => {
+            // Given
+            const current = calc(5);
+            // When
+            const result = current.add(-10);
+            // Then
+            expect(current.v).to.equal(-5);
+        });
     });
 
     describe(".minus()", () => {
