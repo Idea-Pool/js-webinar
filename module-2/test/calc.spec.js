@@ -96,18 +96,18 @@ describe('Module 2 - Calculator test suite', () => {
 
     it('Should throw error in case of division by 0', () => {
         // Given
-        let c = calc(3);
+        let calculator = calc(3);
 
         // When + Then
-        expect(() => c.divide(0)).to.throw;
+        expect(() => calculator.divide(0)).to.throw;
     });
 
     it('Should throw error in case of sqrt by negative number', () => {
         // Given
-        let c = calc(3);
+        let calculator = calc(-3);
 
         // When + Then
-        expect(() => c.sqrt(-3)).to.throw;
+        expect(() => calculator.sqrt()).to.throw;
     });
 
     it('Should support operations in chain', () => {
