@@ -24,7 +24,7 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
     
-    gradeOfStudent = (score < 0 || score > 100) ? 0 : (score >= 90) ? 5 : (score >= 80) ? 4 : (score >= 70) ? 3 : (score >= 60) ? 2 : 1;
+    gradeOfStudent = (score < 0 || score > 100) ? 0 : Math.max(1, Math.min(5, Math.floor(score / 10) - 4));
 
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
