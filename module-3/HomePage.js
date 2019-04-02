@@ -7,11 +7,9 @@ class HomePage extends Layout {
     constructor() {
         super('Home', 'https://epam.com', { css: '.body' });
         this.title = new Element('Title', { css: '.title' });
-        super.addChildren(this.title);
-        this.title.setParent(this);
+        this.addChildren(this.title);
         this.menuBar = new Element('MenuBar', { css: '.menuBar' });
-        super.addChildren(this.menuBar);
-        this.menuBar.setParent(this);
+        this.addChildren(this.menuBar);
     }
 
     getTitle() {

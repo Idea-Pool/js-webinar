@@ -34,8 +34,8 @@ class Element {
         }
 
         else {
-            return this.children[Object.keys(this.children)[0]].get(name);
-        }
+            return Object.values(this.children).find(function (item) { return item.get(name); }).get(name);
+        } 
     }
 }
 
