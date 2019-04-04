@@ -3,22 +3,7 @@
 const calc = require('../calc');
 const expect = require('chai').expect;
 
-describe.only('The methods of the calculator should match the requirements', () => {
-    /*
-     * calc(3).v // 3
-     * calc(3).add(5).v // 8
-     * calc(3).minus(2).v // 1
-     * calc(4).sqrt().v // 2
-     * calc(3).times(10).v // 30
-     * calc(10).divide(2).v // 5
-     * calc(10).modulo(5).v // 0
-     * calc(5).divide(0) // throw error
-     * calc(-3).sqrt() // throw error
-     * calc(3).add(4)
-     *     .minus(3)
-     *     .times(6).v // 24
-     */
-    // TODO: write test cases to test calculator
+describe('The methods of the calculator should match the requirements', () => {
 
     it("should store the initial value", () => {
         // Given
@@ -42,7 +27,7 @@ describe.only('The methods of the calculator should match the requirements', () 
             expect(current.v).to.equal(10);
         });
 
-        it("should add a negative number ot the positive number", () => {
+        it("should add a negative number to a positive number", () => {
             // Given
             const current = calc(5);
             // When
@@ -104,5 +89,77 @@ describe.only('The methods of the calculator should match the requirements', () 
         });
     });
 
-    it("should support chaining operations");
+    describe(".times()", () => {
+        it("should exist", () => {
+            // Given
+            const current = calc(10);
+            // Then
+            expect(current.times).not.to.be.undefined;
+        });
+
+        it("should multiply the given numbers", () => {
+            // Given
+            const current = calc(10);
+            // When
+            const result = current.times(3);
+            // Then
+            expect(result.v).to.equal(30);
+        });
+
+        it("should multiply the given numbers if one of them is negative", () => {
+            // Given
+            const current = calc(-5);
+            // When
+            const result = current.times(5);
+            // Then
+            expect(result.v).to.equal(-25);
+        });
+
+        it("should multiply the given numbers if both of them are negative", () => {
+            // Given
+            const current = calc(-5);
+            // When
+            const result = current.times(-5);
+            // Then
+            expect(result.v).to.equal(25);
+        });
+    });
+
+    describe(".divide()", () => {
+        it("should divide the given numbers", () => {
+            // Given
+            const current = calc(10);
+            // When
+            const result = current.divide(5);
+            // Then
+            expect(result.v).to.equal(2);
+        });
+
+        it("should throw error when the divider is 0", () => {
+            // Given
+            const current = calc(10);
+            // When
+            const action = () => current.divide(0);
+            // Then
+            expect(action).to.throw();
+        });
+    });
+
+    describe(".modulo()", () => {
+        it("should give back the remainder", () => {
+            // Given
+            const current = calc(10);
+            // When
+            const result = current.modulo(5);
+            // Then
+            expect(result.v).to.equal(0);
+        });
+    });
+
+    it("should support chaining operations", () => {
+         expect(calc(3)
+                .add(4)
+                .minus(3)
+                .times(6).v).to.equal(24);
+    });
 });
