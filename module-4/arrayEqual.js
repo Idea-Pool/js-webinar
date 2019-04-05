@@ -12,3 +12,27 @@
  * @returns {boolean} true if the two arrays are equal,
  *                    false otherwise
  */
+
+function arrayEqual(first, second) {
+    var result = true;
+
+    if (first.length !== second.length) {
+        console.warn('Different lenghts: ' + first.length + ' and ' + second.length);
+        return false;
+    }
+
+    for (var [key, value] of Object.entries(first)) {
+        if (Array.isArray(value)) {
+            result = arrayEqual(first[key], second[key]);
+        } else {
+            if (first[key] !== second[key]) {
+                console.warn('Different array values: ' + first[key] + ' and ' + second[key]);
+                return false;
+            }
+        }
+    }
+
+    return result;
+}
+
+module.exports = arrayEqual
