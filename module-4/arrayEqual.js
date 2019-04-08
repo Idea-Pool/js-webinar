@@ -12,3 +12,28 @@
  * @returns {boolean} true if the two arrays are equal,
  *                    false otherwise
  */
+
+function arrayEqual(first, second) {
+
+    if (first.length != second.length) {
+        console.warn("Lengths don't equal! See: " + first.length + ", " + second.length)
+    }
+    if (first.length === 0 && second.length=== 0){
+        return true;
+    }
+    for (let i = 0; i < first.length; i++) {
+        if (first[i] instanceof Array && second[i] instanceof Array) {
+            arrayEqual(first[i],second[i])
+        }
+        else if (first[i] !== second[i] ) {
+            console.warn("Elements don't match! See: " + first[i] + ", " +  second[i]);
+            return false;
+        }
+        
+    }
+    return true; 
+
+}
+
+
+module.exports = arrayEqual;
