@@ -1,0 +1,549 @@
+[
+  {
+    "description": "    As a webinar attendee\n    I want to write test for EPAM career site\n    So that I can practice Cucumber",
+    "keyword": "Feature",
+    "name": "EPAM site",
+    "line": 1,
+    "id": "epam-site",
+    "tags": [],
+    "uri": "module-5\\features\\EPAM.feature",
+    "elements": [
+      {
+        "id": "epam-site;search-for-a-job---software-test-engineering",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Search for a job - Software Test Engineering",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the EPAM Career site is opened",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10063000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the \"Keyword search field\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"Location filter box\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"Department search field\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"Find button\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the \"Location\" filter box is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 262000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Debrecen in Hungary is selected in the Location filter box",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3455000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the Location filter box should contain Debrecen",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the \"Skills\" filter box is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Software Test Engineering is selected in the Skills filter box",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the Skills filter box should contain \"Selected: 1\"",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the selected Software Test Engineering should appear under the search form",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the Find button is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the search results should be displayed",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the results should contain Debrecen, Hungary",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the Apply buttons should be displayed",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the first search result's Apply button is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2524000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the Job listings page should contain Debrecen, Hungary",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the Job listings page should contain the selected PositionName",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "epam-site;search-for-a-job---software-engineering",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Search for a job - Software Engineering",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the EPAM Career site is opened",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2529000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the \"Keyword search field\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the \"Location filter box\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the \"Department search field\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the \"Find button\" should be visible",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the \"Location\" filter box is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 226000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Minsk in Belarus is selected in the Location filter box",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3308000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "the Location filter box should contain Minsk",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "the \"Skills\" filter box is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Software Engineering is selected in the Skills filter box",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the Skills filter box should contain \"Selected: 1\"",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the selected Software Engineering should appear under the search form",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the Find button is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1623000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the search results should be displayed",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the results should contain Minsk, Belarus",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the Apply buttons should be displayed",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "the first search result's Apply button is clicked",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2822000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the Job listings page should contain Minsk, Belarus",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "the Job listings page should contain the selected PositionName",
+            "match": {
+              "location": "module-5\\step_definitions\\index.js:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
