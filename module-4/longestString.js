@@ -16,11 +16,12 @@
         if (strings[i].length > longestString.length){
             longestString = strings[i];
         }
-        else if (strings[i].length == longestString.length && strings[i] < longestString || longestString.length == 0)
-         {
-             longestString = strings[i];
-         }
-            
+       if (strings[i].length == longestString.length && strings[i] < longestString || longestString.length == 0)
+       {
+         longestString = strings[i];
+       }
+    
+         
     }
     return longestString;
  }
