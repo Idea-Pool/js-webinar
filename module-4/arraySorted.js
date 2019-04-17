@@ -45,7 +45,7 @@ function arraySorted(myArray, ignoreChars) {
     orderedArray = [...originalArray];
     orderedArray.sort();
 
-    result = arrayEqual(originalArray, orderedArray);
+    result = JSON.stringify(originalArray) === JSON.stringify(orderedArray);
 
     return result;
 }

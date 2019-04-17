@@ -33,9 +33,8 @@ class Element {
             return this.children[name].get();
         }
 
-        else {
-            return Object.values(this.children).find(function (item) { return item.get(name); }).get(name);
-        } 
+        return Object.values(this.children).find(function(item) { return item.get(name); }).get(name);
+
     }
 }
 

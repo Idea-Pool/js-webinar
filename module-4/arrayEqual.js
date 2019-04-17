@@ -16,6 +16,8 @@
 function arrayEqual(first, second) {
     var result = true;
 
+    if (!Array.isArray(first) || !Array.isArray(second)) return false;
+
     if (first.length !== second.length) {
         console.warn('Different lenghts: ' + first.length + ' and ' + second.length);
         return false;
