@@ -22,10 +22,9 @@ function arraySorted(items, ignore) {
     if (items.length == 0) return true;
 
     let isNumberArray = undefined;
-    for (let i = 0; i < items.length; i++) {
-        if (typeof items[i] != "number") isNumberArray = false;
-        else isNumberArray = true;
-    }
+    if (items.every(element => typeof element != "number")) isNumberArray = false;
+    else isNumberArray = true;
+
 
     if (isNumberArray == true) {
         let copiedArray = items.slice();
