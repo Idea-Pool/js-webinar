@@ -12,13 +12,20 @@ describe('The methods of the calculator should match the requirements', () => {
         expect(current.v).to.be.equal(3);
     });
 
+    it("should support chaining operations", () => {
+        expect(calc(3)
+               .add(4)
+               .minus(3)
+               .times(6).v).to.equal(24);
+   });
+
     describe(".add()", () => {
         it("should have method to add a number", () => {
             const current = calc(20);
             expect(current.add).not.to.be.undefined;
         });
 
-        it("should add a given number to the current one", () => {
+        it("should add the given number to the current one", () => {
             // Given
             const current = calc(5);
             // When
@@ -154,12 +161,5 @@ describe('The methods of the calculator should match the requirements', () => {
             // Then
             expect(result.v).to.equal(0);
         });
-    });
-
-    it("should support chaining operations", () => {
-         expect(calc(3)
-                .add(4)
-                .minus(3)
-                .times(6).v).to.equal(24);
     });
 });

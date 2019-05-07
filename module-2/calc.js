@@ -51,14 +51,3 @@ function calc(n) {
 }
 
 module.exports = calc;
-
-/*
-console.log(calc(3).v);
-console.log(calc(3).add(4).v);
-console.log(calc(4).minus(5).v);
-console.log(calc(4).times(6).v);
-console.log(calc(10).div(5).v);
-console.log(calc(10).modulo(5).v);
-console.log(calc(4).add(4).times(5).div(1.5).minus(2).v);
-console.log(calc(5).div(0));
-*/
