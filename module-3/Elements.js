@@ -11,6 +11,14 @@ class Elements extends Element {
     addChildren() {
         throw new Error("Elements cannot have children!");
     }
+
+    all() {
+        return element.all(this.locator);
+    }
+
+    get(name) {
+        return this.all().get(name);
+    }
 }
 
 module.exports = Elements;
