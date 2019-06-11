@@ -22,8 +22,8 @@
   "dependencies": {
     "chai": "^4.2.0",
     "cucumber": "^5.1.0",
-    "jasmine": "^3.3.1",
-    "mocha": "^6.0.2",
-    "sinon": "^7.2.7"
+    "jasmine": "^3.4.0",
+    "mocha": "^6.1.4",
+    "sinon": "^7.3.2"
   }
 }
