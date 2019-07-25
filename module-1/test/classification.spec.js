@@ -3,7 +3,7 @@
 const classification = require('../classification');
 const expect = require('chai').expect;
 
-describe('Module 1 - Classification', () => {
+describe.only('Module 1 - Classification', () => {
     it("should return a number", () => {
         return expect(classification(0)).to.be.a('number');
     });
