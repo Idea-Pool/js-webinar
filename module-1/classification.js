@@ -12,6 +12,7 @@
  * @param {number} score (0 <= score <= 100)
  * @returns {number} grade or 0 if any arguments are not proper
  */
+
 function grade(score) {
     let gradeOfStudent;
     /*
@@ -23,8 +24,24 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    if(score < 0 || score > 100) {
+        return 0;
+    }
+    if (score <= 59) {
+        gradeOfStudent = 1;
+    } else if (score <= 69) {
+        gradeOfStudent = 2;
+    } else if (score <= 79) {
+        gradeOfStudent = 3;
+    } else if (score <= 89) {
+        gradeOfStudent = 4;
+    } else if (score <= 100) {
+        gradeOfStudent = 5;
+    } else {
+        gradeOfStudent = 0;
+    }
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
+
 module.exports = grade;

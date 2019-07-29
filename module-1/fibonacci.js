@@ -17,7 +17,14 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    let secondVal;
+    if (n < 0) return 0;
+    let arr = [0, 1];
+    for (var i = 1; i <= n; i++) {
+        secondVal = arr[i] + arr[i - 1];
+        arr.push(secondVal);
+    }
+    nThFibonacci = arr[n];
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }
