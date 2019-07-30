@@ -18,6 +18,23 @@ function fibonacci(n) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+		if (n >= 0) {
+			if (n < 2) {
+				nThFibonacci = n;
+			} else {
+				let f0 = 0;
+				let f1 = 1;
+				for (let i = 2; i <= n; ++i) {
+					const sum = f0 + f1;
+					f0 = f1;
+					f1 = sum;
+				}
+				nThFibonacci = f1;
+			}
+		} else {
+				nThFibonacci = 0;
+		}
+
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }

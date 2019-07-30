@@ -23,7 +23,15 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+	if (score < 0 || score > 100) {
+        gradeOfStudent = 0;
+    } else if (score >= 90) {
+		gradeOfStudent = 5;
+	} else if (score <= 59 ) {
+		gradeOfStudent = 1;
+	} else {
+	    gradeOfStudent = Math.floor(0.1*score - 4);
+    }
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
