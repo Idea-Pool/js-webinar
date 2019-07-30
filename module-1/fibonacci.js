@@ -32,7 +32,7 @@ function fibonacci(n) {
 				nThFibonacci = f1;
 			}
 		} else {
-				nThFibonacci = 0;
+			nThFibonacci = 0;
 		}
 
     // ...AND THIS COMMENT LINE!
