@@ -19,5 +19,20 @@ describe.only('calc', () => {
      *     .times(6).v // 24
      */
     // TODO: write test cases to test calculator
+    it ("should have proper value");
 
-});
+    describe("add", () => {
+        it ("should be able to add a number to the current value");
+    });
+
+    describe("minus", () => {
+        it ("should be able to subtract a number from the current value");
+    });
+
+    describe("divide", () => {
+        it ("should be able to perform a valid division");
+        it ("should handle devision by zero");
+    });
+
+
+    });
