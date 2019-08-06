@@ -17,10 +17,28 @@ function euclidean(a, b) {
      * If you have the result, assign it to the variable, called gcd.
      * Also take into consideration the documentation of the function!
      */
-    // PLACE YOUR CODE BETWEEN THIS...
 
+    if(a <= 0 || b <= 0){
+        gcd = 0;
+    } else if(a === b){
+        gcd = a;
+    } else {
+        let max=a;
+        if(a > b){
+            max = a-1;
+        } else {
+            max = b-1;
+        }
+        while(max !== 0){
+            if(a % max === 0 && b % max === 0){
+                gcd = max;
+                break;
+            } else {
+                max--;
+            }
+        }
+    }
 
-    // ...AND THIS COMMENT LINE!
     return gcd;
 }
 module.exports = euclidean;

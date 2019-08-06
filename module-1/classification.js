@@ -22,9 +22,9 @@ function grade(score) {
      * Store the grade in the gradeOfStudent variable.
      * Also take into consideration the documentation of the function!
      */
-    // PLACE YOUR CODE BETWEEN THIS...
 
-    // ...AND THIS COMMENT LINE!
+    gradeOfStudent = score < 0 || score > 100 ? 0 : Math.max(Math.min(Math.floor(score/10-4), 5), 1);
+
     return gradeOfStudent;
 }
 module.exports = grade;

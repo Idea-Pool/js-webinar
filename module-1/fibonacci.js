@@ -16,9 +16,18 @@ function fibonacci(n) {
      * Store the value in the nThFibonacci variable.
      * Also take into consideration the documentation of the function!
      */
-    // PLACE YOUR CODE BETWEEN THIS...
 
-    // ...AND THIS COMMENT LINE!
+    if(n <= 0){
+        nThFibonacci = 0;
+    } else {
+        let sequence = [0, 1];
+        for(let i=1; i < n; i++){
+            let sequenceLastIndex = sequence.length - 1;
+            sequence.push(sequence[sequenceLastIndex] + sequence[sequenceLastIndex-1]);
+        }
+        nThFibonacci = sequence[sequence.length -1];
+    }
+
     return nThFibonacci;
 }
 module.exports = fibonacci;
