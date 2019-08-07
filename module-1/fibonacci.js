@@ -28,7 +28,6 @@ function fibonacci(n) {
         return nThFibonacci = n;
     }
     
-
     else {
         return nThFibonacci = (fibonacci(n-2) + fibonacci(n-1));
     }
