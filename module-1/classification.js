@@ -23,15 +23,11 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-	if (score < 0 || score > 100) {
-        gradeOfStudent = 0;
-    } else if (score >= 90) {
-		gradeOfStudent = 5;
-	} else if (score <= 59 ) {
-		gradeOfStudent = 1;
-	} else {
-	    gradeOfStudent = Math.floor(0.1*score - 4);
-    }
+    gradeOfStudent = 
+	    Math.pow(
+			Math.floor(0.1 * score - 4) * (score > 0 && score <= 100), // returns grade*1 when 0 < score <= 100 (or returns grade*0 =0 when score is out of that range)
+			score >= 60 || score < 0 // exponent that equals 0 when 0 < score <=60, so the grade^0 will be 1 (or 1 in all the other cases, so grade^1=grade)
+		) - (score === 100); // substracts 1 in case when score = 100 (in this case Math.floor returns 6, but we need grade 5)
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
