@@ -19,6 +19,19 @@ function fibonacci(n) {
     // PLACE YOUR CODE BETWEEN THIS...
 
     // ...AND THIS COMMENT LINE!
-    return nThFibonacci;
+
+    if (n <= 0) {
+        return 0;
+    }
+
+    if ((n >= 0) && (n < 2)) {
+        return nThFibonacci = n;
+    }
+    
+
+    else {
+        return nThFibonacci = (fibonacci(n-2) + fibonacci(n-1));
+    }
+    
 }
 module.exports = fibonacci;
