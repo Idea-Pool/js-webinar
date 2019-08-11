@@ -18,8 +18,13 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a < 0 || b < 0) return 0;
+    let min = a < b ? a : b;
+    let max = a > b ? a : b;
+    while (min !== 0) {
+        gcd = min;
+        min = max % min;
+    }
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
