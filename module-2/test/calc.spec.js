@@ -64,7 +64,7 @@ describe.only('calc', () => {
 
         it ("should handle sqrt from negative value", () => {
             const c = calc(-3);
-            expect(() => d.sqrt(-3)).to.throw();           
+            expect(() => c.sqrt()).to.throw("Square root of negative value cannot be determined!");           
         });
     });
 
@@ -95,7 +95,7 @@ describe.only('calc', () => {
 
         it ("should handle devision by zero", () => {
             const c = calc(5);
-            expect(() => d.divide(0)).to.throw();
+            expect(() => c.divide(0)).to.throw("Division by 0 is not possible!");
         });
     });
 

@@ -28,8 +28,7 @@ function euclidean(a, b) {
         }
         gcd = a;
     } else {
-        //not proper
-        gdc = 0;
+        gcd = 0;
     }
 
     // ...AND THIS COMMENT LINE!
