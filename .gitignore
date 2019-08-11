@@ -56,7 +56,7 @@ typings/
 
 # dotenv environment variables file
 .env
-
+.vscode
 .idea
 
 package-lock.json
