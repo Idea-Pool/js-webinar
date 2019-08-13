@@ -64,7 +64,7 @@ describe('Elements Class', () => {
             const element = new Elements('Body', {css: 'body'});
             const child = new Elements('Title', {css: 'h1'});
 
-            expect(() => element.addChildren(child)).to.throw();
+            expect(() => element.addChildren(child)).to.throw('Elements cannot have children!');
         });
     });
 
