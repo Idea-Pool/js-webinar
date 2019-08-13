@@ -16,8 +16,13 @@ class Element {
         this.children[child.name] = child;
     }
     get(name) {
-        if (name) {
+        if (!name) {
             return this.element(this.locator);
+        }
+        if (this.children.hasOwnProperty(child.name)) {
+            return this.children[child.name].get();
+        } else {
+            throw new Error('No child with such a name')
         }
     }
 }
