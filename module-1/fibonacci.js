@@ -17,8 +17,18 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-    // ...AND THIS COMMENT LINE!
-    return nThFibonacci;
+	
+	// If 'n' is negative value than return 0
+	if(n<=0){
+		return 0;
+	}
+	// If 'n=1' return 1
+	if(n==1){
+		return 1;
+	}
+	else{
+    // Using recursive function in order to count value that more than 1
+	    return nThFibonacci = fibonacci(n-2)+fibonacci(n-1);
+	}
 }
 module.exports = fibonacci;

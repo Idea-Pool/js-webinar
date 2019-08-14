@@ -22,9 +22,11 @@ function grade(score) {
      * Store the grade in the gradeOfStudent variable.
      * Also take into consideration the documentation of the function!
      */
-    // PLACE YOUR CODE BETWEEN THIS...
+	 
+    // Using ternary operator in order to include all conditions  
+	gradeOfStudent = score>100?0:score >=90? 5: score>=80?4:score>=70?3:score>=60?2:score<0?0:1;
 
-    // ...AND THIS COMMENT LINE!
+    // return a grade
     return gradeOfStudent;
 }
 module.exports = grade;

@@ -18,9 +18,20 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
-    // ...AND THIS COMMENT LINE!
-    return gcd;
+	
+	//Checking that we cannot devide by '0'
+	if(b==0){
+		return a;
+	}
+	// Checking that the value should be more then '0'
+	if(a < 0 || b < 0){
+		return 0;
+	}
+	
+	// Using recursive function in order to get greatest common divisor
+	gcd = euclidean(b, a%b);
+	
+    // return a result
+	return gcd;
 }
 module.exports = euclidean;
