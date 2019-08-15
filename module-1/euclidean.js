@@ -31,7 +31,7 @@ function euclidean(a, b) {
 	// Using recursive function in order to get greatest common divisor
 	gcd = euclidean(b, a%b);
 	
-    // return a result
+	// return a result
 	return gcd;
 }
 module.exports = euclidean;

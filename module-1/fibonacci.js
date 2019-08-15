@@ -27,8 +27,8 @@ function fibonacci(n) {
 		return 1;
 	}
 	else{
-    // Using recursive function in order to count value that more than 1
-	    return nThFibonacci = fibonacci(n-2)+fibonacci(n-1);
+	// Using recursive function in order to count value that more than 1
+		return nThFibonacci = fibonacci(n-2)+fibonacci(n-1);
 	}
 }
 module.exports = fibonacci;

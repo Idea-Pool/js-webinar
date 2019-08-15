@@ -24,7 +24,7 @@ function grade(score) {
      */
 	 
     // Using ternary operator in order to include all conditions  
-	gradeOfStudent = score>100?0:score >=90? 5: score>=80?4:score>=70?3:score>=60?2:score<0?0:1;
+    gradeOfStudent = score>100?0:score >=90? 5: score>=80?4:score>=70?3:score>=60?2:score<0?0:1;
 
     // return a grade
     return gradeOfStudent;
