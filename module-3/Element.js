@@ -18,11 +18,11 @@ class Element {
     get(name) {
         if (!name) {
             return element(this.locator);
-        }else if (this.children.hasOwnProperty(name)) {
+        } else if (this.children.hasOwnProperty(name)) {
             return element(this.children[name].locator);
-        } 
-            throw new Error('No child with such name.')
         }
+        throw new Error('No child with such name.')
     }
+}
 
 module.exports = Element;

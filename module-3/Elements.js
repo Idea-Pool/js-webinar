@@ -9,10 +9,10 @@ class Elements extends Element {
     addChildren() {
         throw new Error('Elements cannot have children!');
     }
-    all(){
+    all() {
         return element.all(this.locator);
     }
-    get(num){
+    get(num) {
         return num;
     }
 }
