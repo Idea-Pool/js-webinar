@@ -137,6 +137,7 @@ describe.only('calc', () => {
 				() => {
 					const c = calc(3);
 					const result = c.add(4).minus(3).times(6).v;
+					expect(result).to.equal(24);
 				});
 		});
 });
