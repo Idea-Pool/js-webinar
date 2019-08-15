@@ -11,20 +11,18 @@ class Element {
     }
     addChildren(child) {
         if (this.children.hasOwnProperty(child.name)) {
-            throw new Error(child.name + ' is already added.');
+            throw new Error(' Child has already been added.');
         }
         this.children[child.name] = child;
     }
     get(name) {
         if (!name) {
-            return this.element(this.locator);
-        }
-        if (this.children.hasOwnProperty(child.name)) {
-            return this.children[child.name].get();
-        } else {
-            throw new Error('No child with such a name')
+            return element(this.locator);
+        }else if (this.children.hasOwnProperty(name)) {
+            return element(this.children[name].locator);
+        } 
+            throw new Error('No child with such name.')
         }
     }
-}
 
 module.exports = Element;

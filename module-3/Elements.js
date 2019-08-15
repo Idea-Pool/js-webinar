@@ -9,5 +9,11 @@ class Elements extends Element {
     addChildren() {
         throw new Error('Elements cannot have children!');
     }
+    all(){
+        return element.all(this.locator);
+    }
+    get(num){
+        return num;
+    }
 }
 module.exports = Elements;
