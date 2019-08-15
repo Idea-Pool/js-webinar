@@ -23,7 +23,7 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-    if (score >= 0 && score <= 100) {
+    /*if (score >= 0 && score <= 100) {
         if (score >= 90) {
             gradeOfStudent = 5;
         } else if (score >= 80) {
@@ -37,7 +37,8 @@ function grade(score) {
         }
     } else {
         gradeOfStudent = 0;
-    }
+    }*/
+    if (score >= 0 && score <= 100) { gradeOfStudent = Math.min(Math.max(Math.ceil((score - 49) / 10), 1), 5) } else { gradeOfStudent = 0 };
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
