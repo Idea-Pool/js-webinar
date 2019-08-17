@@ -111,7 +111,7 @@ describe.only('calc', () => {
         });
     });
 
-    describe("several function", () => {
+    describe("several functions", () => {
         it("should be able to count correctly", () => {
             // Given
             const initialNumber = calc(3);
