@@ -4,6 +4,7 @@ const ElementFinder = require('./mock/ElementFinder');
 const Browser = require('./mock/Browser');
 const Layout = require('../Layout');
 const expect = require('chai').expect;
+const Element = require('../Element');
 
 describe('Layout Class', () => {
     beforeEach(() => {
