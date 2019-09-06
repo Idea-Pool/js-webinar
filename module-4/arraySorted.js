@@ -13,3 +13,25 @@
  * @returns {boolean} true if the array is properly sorted,
  *                    false otherwise
  */
+
+function arraySorted(items, ignore) {
+    let output = false;
+    if (items.length == 0) {
+        return true;
+    }
+
+    let prettyArr = items.map((value) => {
+        if (typeof value == 'string') {
+            return value.replace(/[ !?@%]/g, '').toLowerCase();
+        }
+        else return value;
+    });
+
+    if (JSON.stringify(prettyArr) === JSON.stringify(prettyArr.sort())) {
+        output = true;
+    }
+
+    return output;
+};
+
+module.exports = arraySorted;
