@@ -2,13 +2,13 @@
 
 const {defineSupportCode} = require('cucumber');
 
-const CareerPage = require('./pageObjects/careerPage.js');
+const CareerPage = require('../pageObjects/careerPage');
 const careerPage = new CareerPage();
 
 defineSupportCode(({Given, When, Then, setDefaultTimeout}) => {
     setDefaultTimeout(GLOBAL_TIMEOUT);
 
-    Given(/the EPAM career page is opened/, () => {
+    Given(/the career page is opened/, () => {
         return careerPage.load();
     });
 

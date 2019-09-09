@@ -2,9 +2,9 @@
 
 class CareerPage {
     constructor() {
-        this.logo = element(by.css('a.logo'));
-        this.searchForm = element(by.css('.job-search-form-ui'));
-        this.searchButton = this.searchForm.element(by.css('.career-apply-box-desktop button[type="Submit"].job-search-button'));
+        this.logo = element(by.css('.header__logo'));
+        this.searchForm = element(by.css('.job-search__form'));
+        this.searchButton = this.searchForm.element(by.css('.recruiting-search__submit button[type="Submit"].job-search-button'));
 
         this.locationFilterBox = this.searchForm.element(by.css('.career-location-box'));
         this.selectedLocation = this.locationFilterBox.element(by.id('select-box-location-select-container'));
@@ -30,7 +30,7 @@ class CareerPage {
     }
 
     load() {
-        browser.get('https://epam.com/careers');
+        browser.get('https://www.epam.com/careers');
         return browser.wait(ec.elementToBeClickable(this.logo), GLOBAL_TIMEOUT);
     }
 

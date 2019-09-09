@@ -3,8 +3,8 @@ Feature: EPAM site
     I want to write test for EPAM career site
     So that I can practice Cucumber
 
-    Scenario: Search for a job
-        Given the EPAM career page is opened
+    Scenario Outline: Search for a job
+        Given the career page is opened
         And the search form should be visible
 
         When <City>, <Country> is selected in the location filter box
@@ -21,8 +21,6 @@ Feature: EPAM site
         When the apply button of the <PositionName> position is clicked on
         Then the description of the job offer should contain "<PositionName>"
         And the description of the job offer should contain "<City>"
-
     Examples:
       | Country | City     | Department                | PositionName              |
-      | Hungary | Debrecen | Software Test Engineering | Test Automation Engineer  |
       | Belarus | Minsk    | Software Architecture     | Test Automation Architect |
