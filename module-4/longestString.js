@@ -1,4 +1,3 @@
-'use strict';
 /**
  * It recieves an array of strings and returns
  * the first longest string from it.

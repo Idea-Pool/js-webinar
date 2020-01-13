@@ -1,5 +1,3 @@
-'use strict';
-
 const arraySum = require('../arraySum');
 const expect = require('chai').expect;
 const testData = require('./arraySum.json');

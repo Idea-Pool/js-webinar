@@ -1,5 +1,3 @@
-'use strict';
-
 const toCamelCase = require('../toCamelCase');
 const expect = require('chai').expect;
 const testData = require('./toCamelCase.json');

@@ -50,6 +50,12 @@ To solve the tasks of each module first you should read carefully both the docum
 1. In this module the task is to create the functions based on the documentation comments.
 1. In this module the task it to create a feature file, based on the test cases from [TEST-CASES.md](/module-5/TEST-CASES.md), and to create the pending step definitions.
 
+### Additional tasks
+
+The repository also contains couple of additional tasks to solve in the `plus` folder. To run the tests for these tasks, the `npm run test:plus` command can be used.
+
+In addition, there are thousands of other tasks on [HackerRank](https://www.hackerrank.com/) from which most can be solved using **JavaScript** and are a good practice. Solving these tasks are highly encouraged ;)
+
 ## Task review
 
 First of all, tests can be used to check whether the solutions are good or not. On the other, if the implementations are pushed to a forked repository and a pull request is opened to the **master** branch, it is going to be reviewed.

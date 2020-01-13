@@ -1,7 +1,5 @@
-'use strict';
-
-const ElementFinder = require('./mock/ElementFinder');
-const Element = require('../Element');
+const ElementFinder = require('../mock/ElementFinder');
+const Element = require('../../pop/Element');
 const expect = require('chai').expect;
 
 describe('Element Class', () => {

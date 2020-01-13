@@ -1,5 +1,3 @@
-'use strict';
-
 const longestString = require('../longestString');
 const expect = require('chai').expect;
 const testData = require('./longestString.json');

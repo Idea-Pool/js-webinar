@@ -1,5 +1,3 @@
-'use strict';
-
 const arraySorted = require('../arraySorted');
 const expect = require('chai').expect;
 const testData = require('./arraySorted.json');

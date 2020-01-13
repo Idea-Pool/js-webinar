@@ -1,5 +1,3 @@
-'use strict';
-
 const calc = require('../calc');
 const expect = require('chai').expect;
 

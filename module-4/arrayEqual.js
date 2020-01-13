@@ -1,4 +1,3 @@
-'use strict';
 /**
  * It determines, whether the given two arrays
  * are equal, by considering the number of elements,

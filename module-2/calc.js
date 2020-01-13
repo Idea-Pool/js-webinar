@@ -1,5 +1,3 @@
-'use strict';
-
 class Calc {
     constructor(v) {
         this.v = +v;

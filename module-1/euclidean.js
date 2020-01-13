@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * The function determines the greatest common divisor or
  * the given two numbers.

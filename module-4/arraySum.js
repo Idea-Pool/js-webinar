@@ -1,4 +1,3 @@
-'use strict';
 /**
  * It recieves an array of strings, integers and
  * array like itself.
