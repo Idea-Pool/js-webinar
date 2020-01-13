@@ -1,4 +1,3 @@
-'use strict';
 /**
  * It returns the camel-case version of string.
  * E.g.: simple lowercase string => SimpleLowercaseString

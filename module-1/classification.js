@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * The function returns the grade (1-5) of the student,
  * based on the score and the following rules:

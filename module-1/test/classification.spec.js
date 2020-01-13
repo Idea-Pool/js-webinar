@@ -1,5 +1,3 @@
-'use strict';
-
 const classification = require('../classification');
 const expect = require('chai').expect;
 

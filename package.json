@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Tasks for JS webinar",
   "scripts": {
-    "test:module-1": "mocha module-1/test/*.spec.js",
-    "test:module-2": "mocha module-2/test/*.spec.js",
-    "test:module-3": "mocha module-3/test/*.spec.js",
-    "test:module-4": "mocha module-4/test/*.spec.js",
-    "test:module-5": "cucumber-js module-5/features/EPAM.feature --require module-5/step_definitions/*.js"
+    "test:module-1": "mocha module-1/test/**/*.spec.js",
+    "test:module-2": "mocha module-2/test/**/*.spec.js",
+    "test:module-3": "mocha module-3/test/**/*.spec.js",
+    "test:module-4": "mocha module-4/test/**/*.spec.js",
+    "test:module-5": "cucumber-js module-5/features/EPAM.feature --require module-5/step_definitions/*.js",
+    "test:plus": "mocha plus/test/**/*.spec.js"
   },
   "repository": {
     "type": "git",

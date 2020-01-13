@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * The function returns the nth value of
  * the Fibonacci sequence

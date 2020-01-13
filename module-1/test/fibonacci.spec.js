@@ -1,5 +1,3 @@
-'use strict';
-
 const fibonacci = require('../fibonacci');
 const expect = require('chai').expect;
 

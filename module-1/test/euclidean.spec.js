@@ -1,5 +1,3 @@
-'use strict';
-
 const euclidean = require('../euclidean');
 const expect = require('chai').expect;
 
