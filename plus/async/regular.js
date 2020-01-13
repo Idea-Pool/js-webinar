@@ -9,5 +9,5 @@ async function wait() {
  * You can't use "await"!
  */
 module.exports = function f() {
-    // ...what to write here?
+    return wait();
 }
