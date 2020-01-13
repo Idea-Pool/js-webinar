@@ -3,4 +3,5 @@
  * 
  * @param {number} sec the seconds to wait
  * @returns {Promise} the promise which resolves when wait if over
+ *                    or fails if parameter is not correct
  */
