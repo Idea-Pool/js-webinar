@@ -16,7 +16,28 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
+if(a<=0 || b<=0) {
+    gcd=0; 
+} else {
 
+
+if (a==b) {
+    gcd=a;
+}
+ else {
+    while (a!=b) {
+        if (a>b) {
+            a-=b;
+            gcd=a; 
+        } else {
+            b-=a;
+            gcd=b;
+        }
+         
+    }
+}
+}
+ 
 
     // ...AND THIS COMMENT LINE!
     return gcd;
