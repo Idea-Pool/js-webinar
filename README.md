@@ -95,6 +95,6 @@ To have a forked repository and create pull request, the following steps could b
 
     _**Note** that the **Compare across forks** might need to be clicked first to see the forked repository (yours too)._
 
-1. If the pull request is in place, a **review** can be requested for it, by adding the account **szikszail** as a reviewer.
+1. If the pull request is in place, a **review** can be requested for it, by adding the account @sorosz89 (optionally @szikszail) as a reviewer.
 
 **Important!** These review pull requests won't be merged to any branch of the original repository.
