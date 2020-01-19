@@ -21,7 +21,38 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    if (score == 100) {gradeOfStudent = 5;}
+    else {
+        switch (Math.floor((100 - score - 1) / 10)) {
+            case -1:
+                gradeOfStudent = 0;
+                break;
+            case 0:
+                gradeOfStudent = 5;
+                break;
+            case 1:
+                gradeOfStudent = 4;
+                break;
+            case 2:
+                gradeOfStudent = 3;
+                break;
+            case 3:
+                gradeOfStudent = 2;
+                break;
+            // fallthrough
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+                gradeOfStudent = 1;
+                break;
+            default:
+                gradeOfStudent = 0;
+                break;
+        }
+    }
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
