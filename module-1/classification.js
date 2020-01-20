@@ -22,6 +22,30 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+/*if (score >= 90 && score <=100){
+  grade = 5;
+} else if (score >= 80 && score <= 89) {
+  grade = 4;
+} else if (score >= 70 && score <= 79) {
+  grade = 3;
+} else if (score >= 60 && score <= 69) {
+  grade = 2;
+} else if (score >= 0 && score <= 59){
+  grade = 1;
+}
+else {
+  grade = 0
+}
+gradeOfStudent = grade */
+
+(score >= 90 && score <=100)?grade = 5:
+(score >= 80 && score <= 89)?grade = 4:
+(score >= 70 && score <= 79)?grade = 3:
+(score >= 60 && score <= 69)?grade = 2:
+(score >= 0 && score <= 59)?grade = 1:
+grade = 0;
+gradeOfStudent = grade 
+
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
