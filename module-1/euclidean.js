@@ -11,13 +11,30 @@ function euclidean(a, b) {
     /*
      * Your task is to compute the greatest common divisor of
      * the numbers given in a and b variables, using the
-     * Euclidean algorithm (https://en.wikipedia.org/wiki/Euclidean_algorithm).
+     * Euclidean algorithm (https://en .wikipedia.org/wiki/Euclidean_algorithm).
      * If you have the result, assign it to the variable, called gcd.
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a > 0 && b > 0) {
+    if (a == b) {
+        gcd = a;
+    }
+    else {
+    while (a !== b) {
+            if (a > b) {
+            a -= b;
+            gcd = a;
+        } else {
+            b -= a;
+            gcd = b;
+        }
+    }
+}
+}
+    else {
+    gcd = 0;
+}
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
