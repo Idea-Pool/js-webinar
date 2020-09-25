@@ -17,7 +17,7 @@ function padovanSequence(number) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-   
+
     // ...AND THIS COMMENT LINE!
     return padovanNum;
 }
