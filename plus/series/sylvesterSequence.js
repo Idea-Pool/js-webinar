@@ -15,6 +15,7 @@ function sylvesterSequence(number) {
      * https://en.wikipedia.org/wiki/Sylvester%27s_sequence
      * Store the value in the sylvesterNum variable.
      * Also take into consideration the documentation of the function!
+     * Since numbers can be very big, use %10^9 + 7.
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
