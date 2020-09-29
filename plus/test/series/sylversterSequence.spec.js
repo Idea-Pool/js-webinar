@@ -3,7 +3,7 @@ const expect = require('chai').expect;
 
 describe("In the Sylvester series", () => {
     it("the negative number should return error", () => {
-        expect(sylvesterSequence(0)).to.throw();
+        expect(sylvesterSequence(-5)).to.throw();
     });
     it("the first number should be 2", () => {
         expect(sylvesterSequence(0)).to.equal(2);
