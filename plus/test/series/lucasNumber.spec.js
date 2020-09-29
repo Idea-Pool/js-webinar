@@ -3,7 +3,12 @@ const expect = require('chai').expect;
 
 describe("In the Lucas series", () => {
     it("the negative number should return error", () => {
-        expect(lucasNumber(-5)).to.throw();
+        try {
+            lucasNumber(-5)
+            throw new Error();
+          } catch (e) {
+            expect(e).to.be.instanceOf(Error);
+          }
     });
     it("the first number should be 2", () => {
         expect(lucasNumber(0)).to.equal(2);

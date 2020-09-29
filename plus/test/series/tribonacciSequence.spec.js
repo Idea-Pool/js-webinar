@@ -3,7 +3,12 @@ const expect = require('chai').expect;
 
 describe("In the Tribonacci series", () => {
     it("the negative number should return error", () => {
-        expect(tribonacciSequence(-5)).to.throw();
+        try {
+            tribonacciSequence(-5)
+            throw new Error();
+          } catch (e) {
+            expect(e).to.be.instanceOf(Error);
+          }
     });
     it("the first number should be 0", () => {
         expect(tribonacciSequence(0)).to.equal(0);
