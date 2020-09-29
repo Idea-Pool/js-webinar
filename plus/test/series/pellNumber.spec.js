@@ -2,6 +2,9 @@ const pellNumber = require("../../series/pellNumber");
 const expect = require('chai').expect;
 
 describe("In the Pell series", () => {
+    it("the negative number should return error", () => {
+        expect(pellNumber(0)).to.equal(0);
+    });
     it("the first number should be 0", () => {
         expect(pellNumber(0)).to.equal(0);
     });
