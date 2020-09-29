@@ -5,6 +5,5 @@
  * https://en.wikipedia.org/wiki/Sylvester%27s_sequence
  *
  * @param {number} n (n >= 0)
- * @function sylvesterSequence return the nth value of the Sylvester's sequence
  * @returns {number}
  */

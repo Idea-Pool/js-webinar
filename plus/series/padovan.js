@@ -4,6 +4,5 @@
  * https://en.wikipedia.org/wiki/Padovan_sequence
  *
  * @param {number} n (n >= 0)
- * @function padovanSequence return the nth value of the Padovan sequence
  * @returns {number}
  */
