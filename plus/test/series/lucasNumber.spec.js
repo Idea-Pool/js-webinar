@@ -2,26 +2,25 @@ const lucasNumber = require("../../series/lucasNumber");
 const expect = require('chai').expect;
 
 describe("In the Lucas series", () => {
-    it("the negative number should return error", () => {
-        try {
-            lucasNumber(-5)
-            throw new Error();
-          } catch (e) {
-            expect(e).to.be.instanceOf(Error);
-          }
+    it("the parameter should be a number", () => {
+        expect(()=>lucasNumber("Test")).to.throw(TypeError)
     });
-    it("the first number should be 2", () => {
+    it("the -2. number should return error", () => {
+        expect(()=>lucasNumber(-2)).to.throw()
+    });
+    it("the -1. number should return error", () => {
+        expect(()=>lucasNumber(-1)).to.throw()
+    });
+    it("the 0. number should be 2", () => {
         expect(lucasNumber(0)).to.equal(2);
     });
-    it("the second number should be 1", () => {
+    it("the 1. number should be 1", () => {
         expect(lucasNumber(1)).to.equal(1);
     });
-    it("the 16th number should be 1364", () => {
-        expect(lucasNumber(15)).to.equal(1364);
+    it("the 2. number should be 3", () => {
+        expect(lucasNumber(2)).to.equal(3);
     });
-    it("the 31th number should be 1860498", () => {
-        expect(lucasNumber(30)).to.equal(1860498);
+    it("the 3. number should be 4", () => {
+        expect(lucasNumber(3)).to.equal(4);
     });
-
-
 });
