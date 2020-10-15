@@ -10,7 +10,7 @@ Tasks of JS webinar.
 ## Setup
 
 ```
-$> git clone https://github.com/szikszail/js-webinar.git
+$> git clone https://github.com/idea-pool/js-webinar.git
 $> cd js-webinar
 $> npm install
 ```
@@ -74,7 +74,7 @@ To have a forked repository and create pull request, the following steps could b
 1. To get updates and latest version, you should **set the original repository as another remote**:
 
     ```
-    $> git remote add source https://github.com/szikszail/js-webinar.git
+    $> git remote add source https://github.com/idea-pool/js-webinar.git
     ```
 
 1. Anytime, you want to **update your code with latest changes on the original repository**, the following command should be executed:
