@@ -11,7 +11,7 @@ describe("In the Catalan series", () => {
     it("the -1. number should return error", () => {
         expect(()=>catalanNumber(-1)).to.throw()
     });
-    it("the 0. number should be 0", () => {
+    it("the 0. number should be 1", () => {
         expect(catalanNumber(0)).to.equal(1);
     });
     it("the 1. number should be 1", () => {
