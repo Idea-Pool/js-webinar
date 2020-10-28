@@ -14,12 +14,6 @@ describe("In the Prime series", () => {
     it("the 0. number should be 2", () => {
         expect(primeNumber(0)).to.equal(2);
     });
-    it("the 1. number should be 3", () => {
-        expect(primeNumber(1)).to.equal(3);
-    });
-    it("the 2. number should be 5", () => {
-        expect(primeNumber(2)).to.equal(5);
-    });
     it("the 12. number should be 41", () => {
         expect(primeNumber(12)).to.equal(41);
     });
