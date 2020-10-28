@@ -17,9 +17,6 @@ describe("In the Catalan series", () => {
     it("the 1. number should be 1", () => {
         expect(catalanNumber(1)).to.equal(1);
     });
-    it("the 2. number should be 2", () => {
-        expect(catalanNumber(2)).to.equal(2);
-    });
     it("the 6. number should be 132", () => {
         expect(catalanNumber(6)).to.equal(132);
     });

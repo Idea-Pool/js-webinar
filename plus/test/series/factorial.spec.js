@@ -17,9 +17,6 @@ describe("In the Factorial series", () => {
     it("the 1. number should be 1", () => {
         expect(factorial(1)).to.equal(1);
     });
-    it("the 2. number should be 2", () => {
-        expect(factorial(2)).to.equal(2);
-    });
     it("the 5. number should be 120", () => {
         expect(factorial(5)).to.equal(120);
     });
