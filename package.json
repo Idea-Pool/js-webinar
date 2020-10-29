@@ -23,7 +23,7 @@
   "dependencies": {
     "chai": "^4.2.0",
     "cucumber": "^6.0.5",
-    "mocha": "^7.0.0",
+    "mocha": "^7.2.0",
     "sinon": "^8.0.4"
   }
 }
