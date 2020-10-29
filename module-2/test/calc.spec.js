@@ -51,10 +51,13 @@ describe.only('calc', () => {
             expect(c.minus).not.to.be.undefined;
         }); 
 
-        it("should be able to substract a number from the current value", (asd) => {
+        it("should be able to substract a number from the current value", () => {
             // GIVEN
+            const c = calc(3);
             // WHEN
+            const result = c.minus(2).v;
             // THEN
+            expect(result).to.equal(1);
         });
     });
 
@@ -84,7 +87,14 @@ describe.only('calc', () => {
         }); 
 
         it("should be able to divide the current value with the given number");
-        it("should handle division by 0");
+        it("should handle division by 0", () => {
+            // GIVEN
+            const c = calc(42);
+            // WHEN
+            // THEN
+            expect(() => c.divide(0)).to.throw();
+            //expect(c.divide.bind(null, 0)).to.throw();
+        });
     });
 
     describe("modulo", () => {
