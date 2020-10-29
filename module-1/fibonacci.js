@@ -20,7 +20,17 @@ function fibonacci(n) {
         if (n < 2){
             nThFibonacci = n;
         } else {
-            nThFibonacci = fibonacci(n-2) + fibonacci(n-1)
+            //nThFibonacci = fibonacci(n-2) + fibonacci(n-1)
+            
+            let f0 = 0;
+            let f1 = 1;
+
+            for (let i = 2; i<=n ; ++i){
+                const sum = f0 + f1;
+                f0 = f1;
+                f1 = sum;
+            }
+            nThFibonacci = f1;
         }
     } else {
         nThFibonacci = 0;
