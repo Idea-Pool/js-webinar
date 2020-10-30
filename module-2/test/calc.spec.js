@@ -67,8 +67,18 @@ describe.only('calc', () => {
             expect(c.sqrt).not.to.be.undefined;
         }); 
 
-        it("should be able to get the square root of the current value");
-        it("should handle square root with negative number");
+        it("should be able to get the square root of the current value", () => {
+            const c = calc(4);
+
+            const result = c.sqrt(2).v;
+
+            expect(result).to.be.equal(2);
+        });
+        it("should handle square root with negative number", () => {
+            const c = calc(-4);
+
+            expect(() => c.sqrt()).to.throw("Square root of negative value cannot be determined!");
+        });
     });
 
     describe("times", () => {
@@ -77,7 +87,13 @@ describe.only('calc', () => {
             expect(c.times).not.to.be.undefined;
         }); 
 
-        it("should be able to multiply the current value with the given number");
+        it("should be able to multiply the current value with the given number", () => {
+            const c = calc(3);
+
+            const result = c.times(10).v;
+
+            expect(result).to.be.equal(30);
+        });
     });
 
     describe("divide", () => {
@@ -86,13 +102,19 @@ describe.only('calc', () => {
             expect(c.divide).not.to.be.undefined;
         }); 
 
-        it("should be able to divide the current value with the given number");
+        it("should be able to divide the current value with the given number", () => {
+            const c = calc(10);
+
+            const result = c.divide(2).v;
+
+            expect(result).to.be.equal(5);
+        });
         it("should handle division by 0", () => {
             // GIVEN
             const c = calc(42);
             // WHEN
             // THEN
-            expect(() => c.divide(0)).to.throw();
+            expect(() => c.divide(0)).to.throw("Division by 0 is not possible!");
             //expect(c.divide.bind(null, 0)).to.throw();
         });
     });
@@ -103,10 +125,22 @@ describe.only('calc', () => {
             expect(c.modulo).not.to.be.undefined;
         }); 
 
-        it("should be able to get the modulo by dividing the current number with the given number");
+        it("should be able to get the modulo by dividing the current number with the given number", () => {
+            const c = calc(10);
+
+            const result = c.modulo(5).v;
+
+            expect(result).to.be.equal(0);
+        });
     });
 
     describe("complexExpression", () => {
-        it("should be able to calculate the given more complex expression");
+        it("should be able to calculate the given more complex expression", () => {
+            const c = calc(3);
+
+            const result = c.add(4).minus(3).times(6).v;
+
+            expect(result).to.be.equal(24);
+        });
     });
 });
