@@ -1,7 +1,7 @@
 const fibonacci = require('../fibonacci');
 const expect = require('chai').expect;
 
-describe('Module 1 - Fibonacci', () => {
+describe.only('Module 1 - Fibonacci', () => {
     it("should return a number", () => {
         return expect(fibonacci(2)).to.be.a('number');
     });

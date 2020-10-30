@@ -1,7 +1,7 @@
 const euclidean = require('../euclidean');
 const expect = require('chai').expect;
 
-describe.only('Module 1 - Euclidean algorithm', () => {
+describe('Module 1 - Euclidean algorithm', () => {
     it("should return a number", () => {
         return expect(euclidean(2, 2)).to.be.a('number');
     });
