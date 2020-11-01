@@ -28,10 +28,7 @@ describe.only('calc', () => {
         // Checks If I have a calculator there is an "add" method as well?
         // If the first IT fails within a describe, the other IT test cases won't be checked
         it("should exist", () => {
-            // GIVEN
             const c = calc(3);
-            // WHEN
-            // THEN
             expect(c.add).not.to.be.undefined;
         }); 
 
@@ -52,11 +49,8 @@ describe.only('calc', () => {
         }); 
 
         it("should be able to substract a number from the current value", () => {
-            // GIVEN
             const c = calc(3);
-            // WHEN
             const result = c.minus(2).v;
-            // THEN
             expect(result).to.equal(1);
         });
     });
@@ -74,6 +68,7 @@ describe.only('calc', () => {
 
             expect(result).to.be.equal(2);
         });
+        
         it("should handle square root with negative number", () => {
             const c = calc(-4);
 
@@ -109,11 +104,9 @@ describe.only('calc', () => {
 
             expect(result).to.be.equal(5);
         });
+
         it("should handle division by 0", () => {
-            // GIVEN
             const c = calc(42);
-            // WHEN
-            // THEN
             expect(() => c.divide(0)).to.throw("Division by 0 is not possible!");
             //expect(c.divide.bind(null, 0)).to.throw();
         });
