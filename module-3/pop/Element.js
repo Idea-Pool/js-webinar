@@ -15,3 +15,35 @@
  *       the given name or throws an Erorr if it cannot
  *       find the element
  */
+class Element {
+    constructor(name, locator) {
+        this.name = name;
+        this.locator = locator;
+        this.parent = null; // If we don't know the Object yet, it should be null
+        this.children = {};
+    }
+
+    setParent(setParent) {
+        this.parent = setParent;
+    }
+
+    addChildren(setChildren) {
+        if(this.children.hasOwnProperty(setChildren.name)){
+            throw new Error(child.name + " It is not possible to add a children twice!");
+        }
+        this.children[setChildren.name] = setChildren;
+    }
+
+    get() {
+
+    }
+
+    get() {
+        if(!this.children.hasOwnProperty(this.name)){
+            throw new Error(this.children.name + " child element is not found");
+        }
+    }
+
+}
+
+module.exports = Element;

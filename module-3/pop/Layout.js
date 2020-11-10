@@ -14,3 +14,19 @@
  * 7. It has a method to load the page, i.e. Navigates to
  *    the URL of it (.load())
  */
+class Layout {
+    constructor(url, name) {
+        this.url = url;
+        this.name = name;
+    }
+
+    get() {
+
+    }
+    
+    load() {
+
+    }
+}
+
+module.exports = Layout;

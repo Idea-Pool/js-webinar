@@ -3,3 +3,8 @@
  * Add main widgets and element of the page and write tests
  * for it (test/pop/HomePage.spec.js).
  */
+class HomePage {
+    
+}
+
+module.exports = HomePage;
