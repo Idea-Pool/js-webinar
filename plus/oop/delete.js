@@ -14,7 +14,7 @@ del = (o, key) => {
     }
 
     newO = Object.assign({}, o);
-    newO = delete(o,(o[key]));
+    newO = delete(o, o[key]);
 
     return newO;
 }
