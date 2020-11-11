@@ -15,6 +15,8 @@ function fibonacci(n) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
+
+    /*
     if (n < 0) {
         nThFibonacci = 0;
     } else {
@@ -24,6 +26,15 @@ function fibonacci(n) {
             nThFibonacci = fibonacci(n-1) + fibonacci(n-2);
         }
     }
+    */
+
+    const fib = [0 , 1];
+    
+    for (let i = 2; i <= n; i++) {
+        fib[i] = fib[i-1] + fib[i-2];
+ 
+    }
+    nThFibonacci = fib[Math.max(0 , n)];
     // ...AND THIS COMMENT LINE!
     return nThFibonacci;
 }
