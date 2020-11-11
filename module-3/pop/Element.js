@@ -38,18 +38,14 @@ class Element {
 
     get(name) {
         if(!name) {
-            return element(this.locator);
+            return ElementFinder.element(this.locator);
         }
-
-        if(!this.children.hasOwnProperty(this.name)){
-            throw new Error(this.children.name + " child element is not found");
+        if(this.children.hasOwnProperty(name)) {
+            return this.children[name].get();
+        } else {
+            throw new Error(`${name} Element is not found!`);
         }
     }
-
-/*     get(name) {
-        if (name) {return elementFinder.element(this.children[name].locator);
-        return elementFinder.element(this.locator);
-      } */
 }
 
 module.exports = Element;

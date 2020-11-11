@@ -14,10 +14,10 @@
  *    by the locator (.get(n)) in it's context
  */
 
-const { element } = require("../test/mock/ElementFinder");
 const Element = require("./Element");
+const ElementFinder = require("../test/mock/ElementFinder");
 
-class Elements extends Element{
+class Elements extends Element {
     constructor(name, locator) {
         super(name, locator)
 
@@ -29,11 +29,11 @@ class Elements extends Element{
     }
 
     all() {
-        return element.all(this.locator);
+        return ElementFinder.element.all(this.locator);
     }
 
     get(n) {
-        return element.all(this.locator).get(n);
+        return ElementFinder.element.all(this.locator).get(n);
     }
 }
 

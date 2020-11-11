@@ -15,35 +15,43 @@
  *    the URL of it (.load())
  */
 
-const Browser = require("../test/mock/Browser");
-const Element = require("./Element");
+const ElementFinder = require("../test/mock/ElementFinder");
 
-class Layout extends Element {
+const Browser = require("../test/mock/Browser");
+const Elements = require("./Elements");
+const browser = new Browser;
+
+class Layout extends Elements {
     constructor(name, url, locator) {
         super(name, locator);
         this.url = url;
-        //this.parent = null;
-        //this.children = {};
-        //this.addChildren();
+        this.parent = null;
+        this.children = {};
     }
-    
-    addChildren(setChildren) {
-        if(Element.children.hasOwnProperty(setChildren.name)){
-            throw new Error(setChildren.name + " It is not possible to add a children twice!");
+
+    addChildren(addChildren) {
+        if(this.children.hasOwnProperty(addChildren.name)){
+            throw new Error(addChildren.name + " is already a child element, duplicates are not allowed!");
         }
-        Element.children[setChildren.name] = setChildren;
+        this.children[addChildren.name] = addChildren;
+    }
+
+    get(name) {
+        if(!name) {
+            return ElementFinder.element(this.locator);
+        }
+        if(this.children.hasOwnProperty(name)) {
+            return this.children[name].get();
+        } else {
+            throw new Error(`${name} Element is not found!`);
+        }
     }
 
     setParent() {
         throw new Error("It cannot have a parent element!");
     }
-
-    get(name) {
-        return element.all(this.locator).get(name);
-    }
     
     load() {
-        const browser = new Browser;
         return browser.get(this.url);
     }
 }
