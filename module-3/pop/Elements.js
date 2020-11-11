@@ -14,6 +14,7 @@
  *    by the locator (.get(n)) in it's context
  */
 
+const { element } = require("../test/mock/ElementFinder");
 const Element = require("./Element");
 
 class Elements extends Element{
@@ -27,8 +28,13 @@ class Elements extends Element{
         throw new Error("Elements cannot have children!");
     }
 
-/*     all() {}
-    get(n) {} */
+    all() {
+        return element.all(this.locator);
+    }
+
+    get(n) {
+        return element.all(this.locator).get(n);
+    }
 }
 
 module.exports = Elements;

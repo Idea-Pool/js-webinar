@@ -1,3 +1,5 @@
+const ElementFinder = require("../test/mock/ElementFinder");
+
 /**
  * Create Element class, which represents an element of
  * the application, and
@@ -27,23 +29,27 @@ class Element {
         this.parent = setParent;
     }
 
-    addChildren(setChildren) {
-        if(this.children.hasOwnProperty(setChildren.name)){
-            throw new Error(child.name + " It is not possible to add a children twice!");
+    addChildren(addChildren) {
+        if(this.children.hasOwnProperty(addChildren.name)){
+            throw new Error(addChildren.name + " It is not possible to add a children twice!");
         }
-        this.children[setChildren.name] = setChildren;
+        this.children[addChildren.name] = addChildren;
     }
 
-    get() {
+    get(name) {
+        if(!name) {
+            return element(this.locator);
+        }
 
-    }
-
-    get() {
         if(!this.children.hasOwnProperty(this.name)){
             throw new Error(this.children.name + " child element is not found");
         }
     }
 
+/*     get(name) {
+        if (name) {return elementFinder.element(this.children[name].locator);
+        return elementFinder.element(this.locator);
+      } */
 }
 
 module.exports = Element;
