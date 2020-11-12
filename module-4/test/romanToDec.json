@@ -1,0 +1,38 @@
+[
+    {
+        "arguments": [12],
+        "result": ""
+    },
+    {
+        "arguments": [],
+        "result": ""
+    },
+    {
+        "arguments": ["CC"],
+        "result": 200
+    },
+    {
+        "arguments": ["CCCIV"],
+        "result": 304
+    },
+    {
+        "arguments": ["CccIv"],
+        "result": 304
+    },
+    {
+        "arguments": ["MMC"],
+        "result": 2100
+    },
+    {
+        "arguments": ["MDCXXCXII"],
+        "result": 1712
+    },
+    {
+        "arguments": ["DXLII"],
+        "result": 542
+    },
+    {
+        "arguments": ["MCCXLI"],
+        "result": 1241
+    }
+]

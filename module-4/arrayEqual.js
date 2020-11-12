@@ -12,12 +12,19 @@
  *                    false otherwise
  */
 
-arrayEqual = (first, second) => {
-     if(first.length !== second.length){
-         console.warn(`The length of the 2 arrays are not the same! first: ${first.length} second array: ${second.length}!`);
+ function arrayEqual(first, second) {
+     if (first.length !== second.length) {
+         console.warn(`The length of the 2 arrays are not the same! First "${first.length}" and second: "${second.length}"!`);
+     } else {
+         return first.every((value, index) => {
+             if(value === second[index]) {
+                return value === second[index];
+             } else {
+                console.warn(`The 2 elements on same index are not the same! First: "${value}" and second: "${second[index]}"!`);
+             }
+         });
      }
-     
-    return false;
+     return false;
  }
 
  module.exports = arrayEqual;
