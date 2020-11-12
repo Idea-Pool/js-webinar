@@ -11,10 +11,13 @@
 del = (o, key) => {
     if(typeof o !== 'object'){
         throw new Error("Not object is passed as argument!");
+    } 
+    if(typeof key !== "string") {
+        throw new Error("Not string is passed as argument!");
     }
 
     newO = Object.assign({}, o);
-    newO = delete(o, o[key]);
+    delete newO[key];
 
     return newO;
 }

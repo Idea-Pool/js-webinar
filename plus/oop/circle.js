@@ -9,18 +9,18 @@
 
  class Circle {
     constructor(r) {
-        if(!(Number.isInteger(r) && r > 0)) {
+        if(!(typeof r === "number" && r > 0)) {
             throw new Error('Invalid radius was given!');
         }
         this.r = r;
     }
     
-    getArea() {
-        return (this.r * this.r * Math.PI);
+    area() {
+        return this.r ** 2 * Math.PI;
     }
 
-    getPerimeter() {
-        return (2 * this.r * Math.PI);
+    perimeter() {
+        return 2 * this.r * Math.PI;
     }
  }
 

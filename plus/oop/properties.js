@@ -6,8 +6,6 @@
  *                     or empty array if it is not an object
  */
 
-properties = (obj) => {
-    return Object.keys(obj);
-}
+properties = obj => Object.keys(obj);
 
 module.exports = properties;

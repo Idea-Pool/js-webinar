@@ -5,7 +5,7 @@ const Layout = require('../../pop/Layout');
 const Element = require('../../pop/Element');
 const expect = require('chai').expect;
 
-describe.only('HomePage Class', () => {
+describe('HomePage Class', () => {
     // TODO: write tests
     const homePage = new HomePage();
 
@@ -24,28 +24,21 @@ describe.only('HomePage Class', () => {
     });
 
     it('should have stored name', () => {
-        //const page = new HomePage();
-
         expect(homePage.name).not.to.be.undefined;
         expect(homePage.name).to.equal('EPAM Home Page');
     });
 
     it('should have stored URL', () => {
-        //const page = new HomePage();
-
         expect(homePage.url).not.to.be.undefined;
         expect(homePage.url).to.equal('https://www.epam.com/');
     });
 
     it('should have stored locator', () => {
-        //const page = new HomePage();
-
         expect(homePage.locator).not.to.be.undefined;
         expect(homePage.locator.css).to.equal('body');
     });
 
     describe('Parent', () => {
-        //const page = new HomePage();
         it('should not have parent by default', () => {
             expect(homePage.parent).not.to.be.undefined;
             expect(homePage.parent).to.be.null;
@@ -60,8 +53,6 @@ describe.only('HomePage Class', () => {
     });
 
     describe('Predefined childrens', () => {
-        //const page = new HomePage();
-
         it('should have Logo set as children', () => {
             expect(homePage.children.Logo.name).to.equal('Logo');
         });
@@ -81,7 +72,6 @@ describe.only('HomePage Class', () => {
 
     describe('Add new childrens', () => {
         it('should have method to add children', () => {
-            //const page = new HomePage();
             const child = new Element('Main Section', { id: "main"});
 
             expect(homePage.addChildren).not.to.be.undefined;
@@ -91,27 +81,13 @@ describe.only('HomePage Class', () => {
         });
 
         it('should not add a children twice', () => {
-            //const page = new HomePage();
             const child = new Element('Main Section', { id: "main"});
-
-            //homePage.addChildren(child);
             expect(() => homePage.addChildren(child)).to.throw();
-        });
-    });
-
-    describe('Get Title', () => {
-        it('should return the Title elements name', () => {
-            //const page = new HomePage();
-
-            expect(homePage.getTitle).not.to.be.undefined;
-            expect(homePage.getTitle()).to.equal('Title');
         });
     });
 
     describe('Load Page', () => {
         it('should load the page', () => {
-            //const page = new HomePage();
-
             expect(homePage.load).not.to.be.undefined;
             expect(homePage.load()).to.equal('https://www.epam.com/');
         });

@@ -11,3 +11,13 @@
  * @returns {boolean} true if the two arrays are equal,
  *                    false otherwise
  */
+
+arrayEqual = (first, second) => {
+     if(first.length !== second.length){
+         console.warn(`The length of the 2 arrays are not the same! first: ${first.length} second array: ${second.length}!`);
+     }
+     
+    return false;
+ }
+
+ module.exports = arrayEqual;

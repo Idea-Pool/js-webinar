@@ -15,36 +15,14 @@
  *    the URL of it (.load())
  */
 
-const ElementFinder = require("../test/mock/ElementFinder");
+const Element = require("./Element");
 
-const Browser = require("../test/mock/Browser");
-const Elements = require("./Elements");
-const browser = new Browser;
-
-class Layout extends Elements {
+class Layout extends Element {
     constructor(name, url, locator) {
         super(name, locator);
         this.url = url;
         this.parent = null;
         this.children = {};
-    }
-
-    addChildren(addChildren) {
-        if(this.children.hasOwnProperty(addChildren.name)){
-            throw new Error(addChildren.name + " is already a child element, duplicates are not allowed!");
-        }
-        this.children[addChildren.name] = addChildren;
-    }
-
-    get(name) {
-        if(!name) {
-            return ElementFinder.element(this.locator);
-        }
-        if(this.children.hasOwnProperty(name)) {
-            return this.children[name].get();
-        } else {
-            throw new Error(`${name} Element is not found!`);
-        }
     }
 
     setParent() {

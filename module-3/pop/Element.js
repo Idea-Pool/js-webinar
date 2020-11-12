@@ -1,4 +1,4 @@
-const ElementFinder = require("../test/mock/ElementFinder");
+//const ElementFinder = require("../test/mock/ElementFinder");
 
 /**
  * Create Element class, which represents an element of
@@ -25,26 +25,26 @@ class Element {
         this.children = {};
     }
 
-    setParent(setParent) {
-        this.parent = setParent;
+    setParent(parent) {
+        this.parent = parent;
     }
 
-    addChildren(addChildren) {
-        if(this.children.hasOwnProperty(addChildren.name)){
-            throw new Error(addChildren.name + " It is not possible to add a children twice!");
+    addChildren(child) {
+        if(this.children.hasOwnProperty(child.name)){
+            throw new Error(child.name + " It is not possible to add a children twice!");
         }
-        this.children[addChildren.name] = addChildren;
+        this.children[child.name] = child;
     }
 
     get(name) {
         if(!name) {
-            return ElementFinder.element(this.locator);
+            return element(this.locator);
         }
         if(this.children.hasOwnProperty(name)) {
             return this.children[name].get();
-        } else {
-            throw new Error(`${name} Element is not found!`);
         }
+
+        throw new Error(`${name} Element is not found!`);
     }
 }
 

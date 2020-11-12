@@ -22,14 +22,6 @@ class HomePage extends Layout{
         this.footerOurBrands = new Element('Our Brands', { css: ".footer__brands-title" });
         this.addChildren(this.footerOurBrands);
     }
-
-    getTitle() {
-        return this.titleElement.name;
-    }
-
-    setParent() {
-        throw new Error("It cannot have a parent element!");
-    }
 }
 
 module.exports = HomePage;

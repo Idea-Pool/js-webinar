@@ -15,11 +15,10 @@
  */
 
 const Element = require("./Element");
-const ElementFinder = require("../test/mock/ElementFinder");
 
 class Elements extends Element {
     constructor(name, locator) {
-        super(name, locator)
+        super(name, locator);
 
         this.children = null;
     }
@@ -29,11 +28,11 @@ class Elements extends Element {
     }
 
     all() {
-        return ElementFinder.element.all(this.locator);
+        return element.all(this.locator);
     }
 
     get(n) {
-        return ElementFinder.element.all(this.locator).get(n);
+        return this.all().get(n);
     }
 }
 
