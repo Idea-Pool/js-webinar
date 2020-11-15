@@ -1,6 +1,7 @@
 const ElementFinder = require('../mock/ElementFinder');
 const Browser = require('../mock/Browser');
 const Layout = require('../../pop/Layout');
+const Element = require('../../pop/Element');
 const expect = require('chai').expect;
 
 describe('Layout Class', () => {
