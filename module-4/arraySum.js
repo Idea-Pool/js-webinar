@@ -10,11 +10,14 @@
 arraySum = (elements) => {
     let sum = 0;
 
-    if(!Array.isArray(elements)){
+    if (!Array.isArray(elements)){
         return 0;
     }
     
     elements.forEach(element => {
+        if (typeof element === "object"){
+            sum += arraySum(element);
+        }
         if(typeof element === "number"){
             sum += element;
         }

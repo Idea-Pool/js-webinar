@@ -14,16 +14,29 @@
  */
 
 function ignoreItems(items, ignore) {
-    if(typeof items !== 'string') {
+    if (typeof items !== 'string' || typeof ignore !== 'string') {
         return items;
     }
-    return items.split("").filter(c => !ignore.includes(c)).join("").toLowerCase();
+
+    return items.split("").filter(char => !ignore.includes(char)).join("").toLowerCase();
 }
 
 function arraySorted(items, ignore) {
-    const toIgnore = ignore ? ignore + ' ' : ' ';
-    const sorted = items.map(item => ignoreItems(item, toIgnore)).sort();
-    return items.every((value, index) => ignoreItems(value, toIgnore) === sorted[index]);
+    if (ignore) {
+        ignore += " ";
+    } else {
+        ignore = " ";
+    }
+    //console.log("Items: " + items);
+    //console.log("Ignore Characters: " + ignore);
+    const sorted = items.map(item => ignoreItems(item, ignore)).sort()
+
+/*     .sort(function(a, b) {
+        return a - b;
+      }); */
+
+    //console.log("Sorted: " + sorted);
+    return items.every((value, index) => ignoreItems(value, ignore) === sorted[index]);
 }
 
 module.exports = arraySorted;

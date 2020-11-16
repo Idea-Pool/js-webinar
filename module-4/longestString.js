@@ -8,14 +8,13 @@
  */
 
 longestString = (strings) => {
-    if(!Array.isArray(strings)){
+    if (!Array.isArray(strings)){
         return "";
     }
 
     strings.sort((a, b) => {
         return a.length - b.length;
     }).sort();
-    //console.log(strings);
 
     return strings[0];
 }

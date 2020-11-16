@@ -25,29 +25,28 @@ charValue = (char) => {
         case "M":
             return 1000;
         default:
-            return -1;
+            return 0;
     }
 }
 
  romanToDec = (roman) => {
-    if(typeof roman !== "string"){
-        //throw new Error("Invalid input!");
+    if (typeof roman !== "string"){
         return "";
     }
 
     let result = 0;
 
     for (let i = 0; i < roman.length; i++) {
-        let char1 = charValue(roman.charAt(i).toUpperCase());
+        let char1 = charValue(roman[i].toUpperCase());
 
         if (i + 1 < roman.length) {
-            let char2 = charValue(roman.charAt(i + 1).toUpperCase());
+            let char2 = charValue(roman[i + 1].toUpperCase());
             if (char1 >= char2) {
                 result += char1;
                 //console.log("Test 1 -->" + result);
             } else {
                 result += (char2 - char1);
-                i++; // ugortatjuk még 1et az i-t, mert már a következőből kivontuk az előzőt
+                i++;
                 //console.log("Test 2 -->" + result);
             }
         } else {
