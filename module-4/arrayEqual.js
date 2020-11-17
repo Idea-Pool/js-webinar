@@ -14,7 +14,7 @@
 
  function arrayEqual(first, second) {
     if (!Array.isArray(first) || !Array.isArray(second)){
-        return 0;
+        return false;
     }
 
     if (first.length !== second.length) {
@@ -26,12 +26,11 @@
         if (Array.isArray(value)) {
             return arrayEqual(value, second[index]);
         }
-        if (value === second[index]) {
-            return value === second[index];
-        } else {
+        if (value !== second[index]) {
             console.warn(`The 2 elements on same index are not the same! First: "${value}" and second: "${second[index]}"!`);
             return false;
         }
+        return true;
     });
  }
 

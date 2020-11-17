@@ -8,14 +8,13 @@
  */
 
 arraySum = (elements) => {
-    let sum = 0;
-
     if (!Array.isArray(elements)){
         return 0;
     }
-    
+
+    let sum = 0;
     elements.forEach(element => {
-        if (typeof element === "object"){
+        if (Array.isArray(element)){
             sum += arraySum(element);
         }
         if(typeof element === "number"){

@@ -12,31 +12,25 @@
  * @returns {boolean} true if the array is properly sorted,
  *                    false otherwise
  */
-
-function ignoreItems(items, ignore) {
-    if (typeof items !== 'string' || typeof ignore !== 'string') {
-        return items;
-    }
-
-    return items.split("").filter(char => !ignore.includes(char)).join("").toLowerCase();
-}
-
+ 
 function arraySorted(items, ignore) {
+    let strings = items.map(item => {
+        return item.toString().toLowerCase().replace(/\s/g, "");
+    });
+
     if (ignore) {
-        ignore += " ";
-    } else {
-        ignore = " ";
+        strings = strings.map(item => {
+            return item.split("").filter(char => {
+                return !ignore.includes(char);
+            }).join("");
+        });
     }
-    //console.log("Items: " + items);
-    //console.log("Ignore Characters: " + ignore);
-    const sorted = items.map(item => ignoreItems(item, ignore)).sort()
 
-/*     .sort(function(a, b) {
-        return a - b;
-      }); */
-
-    //console.log("Sorted: " + sorted);
-    return items.every((value, index) => ignoreItems(value, ignore) === sorted[index]);
+    const sorted = [...strings].sort();
+    //console.log("Sorted: " , sorted);
+    return strings.every((value, index) => {
+        //console.log(value , index, sorted[index]);
+        return value === sorted[index];
+    })
 }
-
 module.exports = arraySorted;
