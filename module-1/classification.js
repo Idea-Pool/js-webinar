@@ -22,7 +22,30 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
-    // ...AND THIS COMMENT LINE!
+
+    if (score < 0 || score > 100) {
+        gradeOfStudent = 0;
+    }
+    else if (score >= 0 && score < 60) {
+        gradeOfStudent = 1;
+    }
+    else if (score >= 60 && score < 70) {
+        gradeOfStudent = 2;
+    }
+    else if (score >= 70 && score < 80) {
+        gradeOfStudent = 3;
+    }
+    else if (score >= 80 && score < 90) {
+        gradeOfStudent = 4;
+    }
+    else if (score >= 90 && score <= 100) {
+        gradeOfStudent = 5;
+    }
+
+ // ...AND THIS COMMENT LINE!
+ 
     return gradeOfStudent;
 }
 module.exports = grade;
+
+ 
