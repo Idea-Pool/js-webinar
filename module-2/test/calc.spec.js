@@ -18,7 +18,6 @@ describe.only('calc', () => {
      *     .times(6).v // 24
      */
     // TODO: write test cases to test calculator
-
     it("should have proper value", () => {
         //Given
         const c = calc(3);
@@ -35,7 +34,6 @@ describe.only('calc', () => {
              //Then
              expect(c.add).not.to.undefined;
         });
-
         it("should be able to add a number to the current value", () => {
             //Given
             const c = calc(3);
@@ -43,10 +41,9 @@ describe.only('calc', () => {
             const result = calc(3).add(5);
             //Then
             expect(result.v).to.equal(8);
-
         });
-   
     });
+
     describe("minus", () => {
         it("should exist", () => {
             //Given
@@ -64,9 +61,7 @@ describe.only('calc', () => {
             expect(result.v).to.equal(1);
         });
     });
-
-    //..
-
+   
     describe("divide", () => {
         it("should exist", () => {
             //Given
@@ -74,11 +69,8 @@ describe.only('calc', () => {
             //When
             //THen
             expect(c.divide).not.to.undefined;
-
         });
-
         it("should be able to perform a valid division", () => {
-
             //Given
             const c = calc(10);
             //When
@@ -86,18 +78,15 @@ describe.only('calc', () => {
             //Then
             expect(result).to.be.equal(5);
         });
-  
         it("should handle division by 0", () => {
-
             //Given
             const c = calc(5);
             //When
             //Then
-            expect(() => c.divide(0)).to.throw("Division");
-            
-
+            expect(() => c.divide(0)).to.throw("Division by 0 is not possible!");
         });
     });
+
     describe("sqrt", () => {
         it("should exist", () => {
             //Given
@@ -105,7 +94,6 @@ describe.only('calc', () => {
             //When
             //THen
             expect(c.sqrt).not.to.undefined;
-
         });
         it("should be able to square a number", () => {
             //Given
@@ -115,15 +103,15 @@ describe.only('calc', () => {
             //Then
             expect(result).to.equal(2);
         });
-
         it ("should handle negative numbers", () => {
             //Given
             const c = calc(-3);
             //When
             //Then
-            expect(() => c.sqrt()).to.throw("Square");
+            expect(() => c.sqrt()).to.throw("Square root of negative value cannot be determined!");
         });
     });
+
     describe("times", () => {
         it("should exist", () => {
             //Given
@@ -131,9 +119,7 @@ describe.only('calc', () => {
             //When
             //THen
             expect(c.times).not.to.undefined;
-
         });
-
         it("should be able to multiply numbers", () => {
             //Given
             const c = calc(3);
@@ -141,9 +127,7 @@ describe.only('calc', () => {
             const result = calc(3).times(10).v;
             //Then
             expect(result).to.equal(30);
-
         });
-
     });
 
     describe("modulo", () => {
@@ -153,9 +137,7 @@ describe.only('calc', () => {
             //When
             //THen
             expect(c.modulo).not.to.undefined;
-
         });
-
         it("should be able to perform modulo operation", () => {
             //Given
             const c = calc(10);
@@ -164,7 +146,6 @@ describe.only('calc', () => {
             //Then
             expect(result).to.equal(0);
         });
-
     });
 
     describe("multiply operations", () => {
@@ -175,13 +156,6 @@ describe.only('calc', () => {
             const result = c.add(4).minus(3).times(6).v;
             //THen
             expect(result).to.equal(24);
-
         });
-
     });
-
-
-
-
 });
-
