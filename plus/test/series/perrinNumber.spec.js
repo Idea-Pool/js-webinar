@@ -20,6 +20,9 @@ describe("In the Perrin series", () => {
     it("the 2. number should be 2", () => {
         expect(perrinNumber(2)).to.equal(2);
     });
+    it("the 3. number should be 3", () => {
+        expect(perrinNumber(3)).to.equal(3);
+    });
     it("the 10. number should be 17", () => {
         expect(perrinNumber(10)).to.equal(17);
     });
