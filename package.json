@@ -8,7 +8,9 @@
     "test:module-3": "mocha module-3/test/**/*.spec.js",
     "test:module-4": "mocha module-4/test/**/*.spec.js",
     "test:module-5": "cucumber-js module-5/features/EPAM.feature --require module-5/step_definitions/*.js",
-    "test:plus": "mocha plus/test/**/*.spec.js"
+    "test:async": "mocha plus/test/async/*.spec.js",
+    "test:oop": "mocha plus/test/oop/*.spec.js",
+    "test:series": "mocha plus/test/series/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,6 @@
     "chai": "^4.2.0",
     "cucumber": "^6.0.5",
     "mocha": "^7.0.0",
-    "sinon": "^8.0.4"
+    "sinon": "^9.2.1"
   }
 }

@@ -14,3 +14,24 @@
  * 7. It has a method to load the page, i.e. Navigates to
  *    the URL of it (.load())
  */
+
+const Element = require("./Element");
+
+class Layout extends Element {
+    constructor(name, url, locator) {
+        super(name, locator);
+        this.url = url;
+        this.parent = null;
+        this.children = {};
+    }
+
+    setParent() {
+        throw new Error("It cannot have a parent element!");
+    }
+    
+    load() {
+        return browser.get(this.url);
+    }
+}
+
+module.exports = Layout;

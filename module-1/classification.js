@@ -22,6 +22,30 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
+    // 1st solution
+
+/*     if (0 <= score  && score <= 100){
+        if (score >= 90){
+            gradeOfStudent = 5;
+        } else if (score >= 80 ){
+            gradeOfStudent = 4;
+        } else if (score >= 70 ){
+            gradeOfStudent = 3;
+        } else if (score >= 60 ){
+            gradeOfStudent = 2;
+        } else {
+            gradeOfStudent = 1;
+        }
+    } else {
+        gradeOfStudent = 0;
+    } */
+
+    // 2nd solution
+    //gradeOfStudent = (0 <= score  && score <= 100) ? (score >= 90) ? 5 : (score >= 80) ? 4 : (score >= 70) ? 3 : (score >= 60) ? 2 : 1 : 0;
+
+    // 3rd solution
+    gradeOfStudent = (score < 0 || score > 100) ? 0 : Math.min(Math.max(Math.ceil((score - 49) / 10), 1), 5);
+
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }

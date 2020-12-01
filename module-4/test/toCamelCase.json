@@ -4,7 +4,7 @@
         "result": ""
     },
     {
-        "arguments": ["Hello World"],
+        "arguments": ["HeLlo World"],
         "result": "helloWorld"
     },
     {

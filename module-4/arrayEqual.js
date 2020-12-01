@@ -11,3 +11,27 @@
  * @returns {boolean} true if the two arrays are equal,
  *                    false otherwise
  */
+
+ function arrayEqual(first, second) {
+    if (!Array.isArray(first) || !Array.isArray(second)){
+        return false;
+    }
+
+    if (first.length !== second.length) {
+         console.warn(`The length of the 2 arrays are not the same! First length: ${first.length} and second length: ${second.length}!`);
+         return false;
+    }
+    return first.every((value, index) => {
+        // Objektumban másik tömböt lekezelni
+        if (Array.isArray(value)) {
+            return arrayEqual(value, second[index]);
+        }
+        if (value !== second[index]) {
+            console.warn(`The 2 elements on same index are not the same! First: "${value}" and second: "${second[index]}"!`);
+            return false;
+        }
+        return true;
+    });
+ }
+
+ module.exports = arrayEqual;

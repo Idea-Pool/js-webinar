@@ -7,3 +7,19 @@
  * @param {string} key the name of the property to delete
  * @returns {object} the new object without the given property
  */
+
+del = (o, key) => {
+    if(typeof o !== 'object'){
+        throw new Error("Not object is passed as argument!");
+    } 
+    if(typeof key !== "string") {
+        throw new Error("Not string is passed as argument!");
+    }
+
+    newO = Object.assign({}, o);
+    delete newO[key];
+
+    return newO;
+}
+
+module.exports = del;

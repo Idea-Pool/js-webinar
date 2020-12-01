@@ -1,3 +1,5 @@
+//const ElementFinder = require("../test/mock/ElementFinder");
+
 /**
  * Create Element class, which represents an element of
  * the application, and
@@ -15,3 +17,35 @@
  *       the given name or throws an Erorr if it cannot
  *       find the element
  */
+class Element {
+    constructor(name, locator) {
+        this.name = name;
+        this.locator = locator;
+        this.parent = null; // If we don't know the Object yet, it should be null
+        this.children = {};
+    }
+
+    setParent(parent) {
+        this.parent = parent;
+    }
+
+    addChildren(child) {
+        if(this.children.hasOwnProperty(child.name)){
+            throw new Error(child.name + " It is not possible to add a children twice!");
+        }
+        this.children[child.name] = child;
+    }
+
+    get(name) {
+        if(!name) {
+            return element(this.locator);
+        }
+        if(this.children.hasOwnProperty(name)) {
+            return this.children[name].get();
+        }
+
+        throw new Error(`${name} Element is not found!`);
+    }
+}
+
+module.exports = Element;

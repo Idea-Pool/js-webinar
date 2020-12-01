@@ -13,11 +13,11 @@ describe("Circle", () => {
 
     it("should calculate perimeter", () => {
         const circle = new Circle(42);
-        expect(circle.getPerimeter()).to.equal(2 * 42 * Math.PI);
+        expect(circle.perimeter()).to.equal(2 * 42 * Math.PI);
     });
 
-    it("should calculate ares", () => {
+    it("should calculate areas", () => {
         const circle = new Circle(42);
-        expect(circle.getArea()).to.equal(42 * 42 * Math.PI);
+        expect(circle.area()).to.equal(42 * 42 * Math.PI);
     });
 });
