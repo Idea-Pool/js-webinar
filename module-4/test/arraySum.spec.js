@@ -9,7 +9,7 @@ describe('Module 4 - arraySum', () => {
 
     testData.forEach(data => {
         it('should return proper value for ' + JSON.stringify(data.arguments), () => {
-            expect(arraySum.apply(null, data.arguments)).to.equal(data.result);
+            expect(arraySum(...data.arguments)).to.equal(data.result);
         });
     });
 });

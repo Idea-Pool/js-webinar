@@ -107,6 +107,19 @@ describe('Layout Class', () => {
             expect(pElement.locator().css).to.equal('h1');
         });
 
+        it('should have method to retrieve nested children element by name', () => {
+            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+            const header = new Element('Header', {css: 'header'});
+            page.addChildren(header);
+            const child = new Element('Title', {css: 'h1'});
+            header.addChildren(child);
+
+            const pElement = page.get('Title');
+
+            expect(pElement).to.be.instanceOf(ElementFinder);
+            expect(pElement.locator().css).to.equal('h1');
+        });
+
         it('should throw error if child element is not found', () => {
             const page = new Layout('Home', 'http://epam.com', {css: 'body'});
             const child = new Element('Title', {css: 'h1'});

@@ -9,7 +9,7 @@ describe('Module 4 - longestString', () => {
 
     testData.forEach(data => {
         it('should return proper value for ' + JSON.stringify(data.arguments), () => {
-            expect(longestString.apply(null, data.arguments)).to.equal(data.result);
+            expect(longestString(...data.arguments)).to.equal(data.result);
         });
     });
 });
