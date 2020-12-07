@@ -22,7 +22,23 @@ function grade(score) {
      */
     // PLACE YOUR CODE BETWEEN THIS...
 
-    // ...AND THIS COMMENT LINE!
+    if (score < 0 || score > 100) {
+        gradeOfStudent = 0;
+    }
+    else {
+        gradeOfStudent = Math.ceil(Math.max(((score - 59) / 41) * 4, 0)) + 1;
+    }
+   
+ // ...AND THIS COMMENT LINE!
+ 
     return gradeOfStudent;
 }
+
+
+
+
+
+
+
+
 module.exports = grade;

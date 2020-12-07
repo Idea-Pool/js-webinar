@@ -1,5 +1,6 @@
 const ElementFinder = require('../mock/ElementFinder');
 const Browser = require('../mock/Browser');
+const Element = require('../../pop/Element');
 const Layout = require('../../pop/Layout');
 const expect = require('chai').expect;
 

@@ -15,3 +15,65 @@
  *       the given name or throws an Erorr if it cannot
  *       find the element
  */
+
+
+const ElementFinder = require("../test/mock/ElementFinder");
+
+
+class Element {
+    constructor(name, locator) {
+        this.locator = locator;
+        this.name = name;
+
+        this.parent = null;
+        this.children = {};
+    }
+
+    setParent(parent) {
+        this.parent = parent;
+    }
+
+    addChildren(child) {
+        if (this.children.hasOwnProperty(child.name)) {
+            throw new Error(child.name + " is already added");
+        }
+        this.children[child.name] = child;
+    }
+
+    get(name) {
+
+        if (name === undefined) {
+
+            const rootName = Object.values(this.locator)[0];
+
+            const rootSelector = Object.keys(this.locator)[0];
+
+            let rootElementFinder= new ElementFinder({ [rootSelector]: rootName });
+
+            return rootElementFinder;
+        }
+
+        else {
+
+            if (this.children.hasOwnProperty(name)) {
+
+                const selectedName = Object.values(this.children[name].locator)[0];
+
+                const selector = Object.keys(this.children[name].locator)[0];
+
+                let selectedElement = new ElementFinder({ [selector]: selectedName });
+
+                return selectedElement;
+
+
+
+            }
+            else {
+                throw new Error("The " + name + " is not a valid child element");
+            }
+        }
+    }
+}
+
+module.exports = Element;
+
