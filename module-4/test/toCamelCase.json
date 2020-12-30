@@ -12,7 +12,7 @@
         "result": "helloWorld"
     },
     {
-        "arguments": ["Hello World! What is up?"],
+        "arguments": ["Hello World!\nWhat\tis up?"],
         "result": "helloWorldWhatIsUp"
     },
     {

@@ -9,7 +9,7 @@ describe('Module 4 - arraySorted', () => {
 
     testData.forEach(data => {
         it('should return proper value for ' + JSON.stringify(data.arguments), () => {
-            expect(arraySorted.apply(null, data.arguments)).to.equal(data.result);
+            expect(arraySorted(...data.arguments)).to.equal(data.result);
         });
     });
 });

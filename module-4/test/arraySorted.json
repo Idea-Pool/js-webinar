@@ -37,7 +37,7 @@
     },
     {
         "arguments": [
-            ["he llo", "h ello"]
+            ["he llo\n", "h\tello"]
         ],
         "result": true
     },

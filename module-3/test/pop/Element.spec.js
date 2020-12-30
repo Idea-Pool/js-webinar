@@ -100,6 +100,19 @@ describe('Element Class', () => {
             expect(pElement.locator().css).to.equal('h1');
         });
 
+        it('should have method to retrieve nested children element by name', () => {
+            const element = new Element('Body', {css: 'body'});
+            const header = new Element('Header', {css: 'head'});
+            element.addChildren(header);
+            const child = new Element('Title', {css: 'h1'});
+            header.addChildren(child);
+
+            const pElement = element.get('Title');
+
+            expect(pElement).to.be.instanceOf(ElementFinder);
+            expect(pElement.locator().css).to.equal('h1');
+        });
+
         it('should throw error if child element is not found', () => {
             const element = new Element('Body', {css: 'body'});
             const child = new Element('Title', {css: 'h1'});

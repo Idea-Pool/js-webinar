@@ -4,6 +4,14 @@
         "result": ""
     },
     {
+        "arguments": [[]],
+        "result": ""
+    },
+    {
+        "arguments": [[1]],
+        "result": ""
+    },
+    {
         "arguments": [["foo", "baar"]],
         "result": "baar"
     },
