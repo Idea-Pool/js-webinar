@@ -14,7 +14,7 @@ describe("In the Cullen series", () => {
     it("the 0. number should be 1", () => {
         expect(cullenNumber(0)).to.equal(1);
     });
-    it("the 3. number should be 5795", () => {
-        expect(cullenNumber(3)).to.equal(5795);
+    it("the 3. number should be 25", () => {
+        expect(cullenNumber(3)).to.equal(25);
     });
 });
