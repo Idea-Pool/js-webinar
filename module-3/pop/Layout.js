@@ -14,3 +14,4 @@
  * 7. It has a method to load the page, i.e. Navigates to
  *    the URL of it (.load())
  */
+module.exports = class Layout {}

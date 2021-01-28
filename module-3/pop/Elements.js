@@ -13,3 +13,4 @@
  * 6. It has a method to retrieve one element from the collection
  *    by the locator (.get(n)) in it's context
  */
+module.exports = class Elements {}
