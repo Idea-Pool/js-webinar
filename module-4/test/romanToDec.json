@@ -1,0 +1,19 @@
+[
+    {
+        "arguments": ["CCC"],
+        "result": 300
+    },
+    {
+        "arguments": ["IV"],
+        "result": 4
+    },
+    {
+        "arguments": ["III"],
+        "result": 3
+    },
+    {
+        "arguments": ["MCDIX"],
+        "result": 1409
+    }
+    
+]
