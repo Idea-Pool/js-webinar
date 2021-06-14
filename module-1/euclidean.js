@@ -16,8 +16,20 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a > 0 && b > 0 && typeof (a) === 'number' && typeof (b) === 'number') {
+        while (a != b) {
+            if (a > b) {
+                a -= b;
+            }
+            else {
+                b -= a;
+            }
+        }
+        gcd = a;
+    }
+    else {
+        gcd = 0;
+    }
     // ...AND THIS COMMENT LINE!
     return gcd;
 }
