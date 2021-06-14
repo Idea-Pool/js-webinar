@@ -1,0 +1,50 @@
+[
+  {
+    "arguments": [ "I" ],
+    "result": 1
+  },
+  {
+    "arguments": [ "IV" ],
+    "result": 4
+  },
+  {
+    "arguments": [ "V" ],
+    "result": 5
+  },
+  {
+    "arguments": [ "IX" ],
+    "result": 9
+  },
+  {
+    "arguments": [ "X" ],
+    "result": 10
+  },
+  {
+    "arguments": [ "XL" ],
+    "result": 40
+  },
+  {
+    "arguments": [ "CCC" ],
+    "result": 300
+  },
+  {
+    "arguments": [ "CD" ],
+    "result": 400
+  },
+  {
+    "arguments": [ "D" ],
+    "result": 500
+  },
+  {
+    "arguments": [ "CM" ],
+    "result": 900
+  },
+  {
+    "arguments": [ "M" ],
+    "result": 1000
+  },
+  {
+    "arguments": [ "MCMIV" ],
+    "result": 1904
+  }
+]
