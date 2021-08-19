@@ -16,7 +16,18 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+   
+    if (a > 0 && b > 0) {
+        let divisionRemainder;
+        while (a % b > 0){
+            divisionRemainder = a % b;
+            a = b;
+            b = divisionRemainder;
+        }
+        gcd = b
+    } else {
+          gcd = 0
+    }
 
     // ...AND THIS COMMENT LINE!
     return gcd;
