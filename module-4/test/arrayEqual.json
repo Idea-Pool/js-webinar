@@ -47,5 +47,19 @@
             [1, 2, [[[[[4]]]]]]
         ],
         "result": false
+    },
+    {
+        "arguments": [
+            [1, "2", [["abc", false, [[[4]], 5]]]],
+            [1, "2", [["abc", false, [[[4]], 5]]]]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [1, "2", [["abc", false, [[[4]], 5]]]],
+            [1, "2", [[["abc"], false, [[[4]]]], 5]]
+        ],
+        "result": false
     }
 ]

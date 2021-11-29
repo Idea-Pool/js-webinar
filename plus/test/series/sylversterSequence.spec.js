@@ -14,7 +14,10 @@ describe("In the Sylvester series", () => {
     it("the 0. number should be 2", () => {
         expect(sylvesterSequence(0)).to.equal(2);
     });
-    it("the 4. number should be 1807 ", () => {
+    it("the 4. number should be 1807", () => {
         expect(sylvesterSequence(4)).to.equal(1807);
+    });
+    it("the 5. number should be 3263443", () => {
+        expect(sylvesterSequence(5)).to.equal(3263443);
     });
 });

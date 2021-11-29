@@ -16,8 +16,15 @@ function euclidean(a, b) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
-
+    if (a > 0 && b > 0 && typeof a === 'number' && typeof b === 'number') {
+        let remainder = a % b;
+        while (remainder > 0) {
+            a = b;
+            b = remainder;
+            remainder = a % b;
+        }
+        gcd = b;
+    } else gcd = 0;
     // ...AND THIS COMMENT LINE!
     return gcd;
 }

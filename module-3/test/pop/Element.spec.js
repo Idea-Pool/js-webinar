@@ -113,12 +113,35 @@ describe('Element Class', () => {
             expect(pElement.locator().css).to.equal('h1');
         });
 
+        it('deeply nested children element can be retrieved by name', () => {
+            const element = new Element('Body', {css: 'body'});
+            const header = new Element('Header', {css: 'head'});
+            const footer = new Element('Footer', {css: 'foot'});
+            element.addChildren(header);
+            element.addChildren(footer);
+            const headerText = new Element('HeaderText', {css: 'head div'});
+            header.addChildren(headerText);
+            const headerTextTitle = new Element('HeaderTextTitle', {css: 'head div h2'});
+            headerText.addChildren(headerTextTitle);
+            const headerImage = new Element('HeaderImage', {css: 'head img'});
+            header.addChildren(headerImage);
+            const headerTextParagraph = new Element('HeaderTextParagraph', {css: 'head div p'});
+            headerText.addChildren(headerTextParagraph);
+            const lastChild = new Element('SubTitle', {css: 'h3'});
+            headerTextParagraph.addChildren(lastChild);
+
+            const pElement = element.get('SubTitle');
+
+            expect(pElement).to.be.instanceOf(ElementFinder);
+            expect(pElement.locator().css).to.equal('h3');
+        });
+
         it('should throw error if child element is not found', () => {
             const element = new Element('Body', {css: 'body'});
             const child = new Element('Title', {css: 'h1'});
             element.addChildren(child);
 
-            expect(() => element.get('Footer')).to.throw();
+            expect(() => element.get('Footer')).to.throw(`No child with Footer name exists!`);
         });
     });
 });

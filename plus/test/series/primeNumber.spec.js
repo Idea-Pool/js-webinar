@@ -17,4 +17,10 @@ describe("In the Prime series", () => {
     it("the 12. number should be 41", () => {
         expect(primeNumber(12)).to.equal(41);
     });
+    it("the 16. number should be 59", () => {
+        expect(primeNumber(16)).to.equal(59);
+    });
+    it("the 100. number should be 547", () => {
+        expect(primeNumber(100)).to.equal(547);
+    });
 });

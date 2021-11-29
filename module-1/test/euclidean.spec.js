@@ -7,7 +7,13 @@ describe('Module 1 - Euclidean algorithm', () => {
     });
 
     it("should return 0 if negative value passed", () => {
-        return expect(euclidean(-2, 2)).to.equal(0);
+        return (expect(euclidean(-2, 2)).to.equal(0) &&
+                expect(euclidean(3, -2)).to.equal(0));
+    });
+
+    it("should return 0 if passed value is not a number", () => {
+        return (expect(euclidean('word', 2)).to.equal(0) &&
+                expect(euclidean(3, false)).to.equal(0));
     });
 
     const values = [
