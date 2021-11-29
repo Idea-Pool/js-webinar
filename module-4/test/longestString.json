@@ -22,5 +22,9 @@
     {
         "arguments": [[true, "hello", "world"]],
         "result": "hello"
+    },
+    {
+        "arguments": [["sda", 45, [false, "sdfhrer", ["asds", ["ssssssssssssss", "fg"],8, "ssssss"]], "sdsd", ["sds", 6, "e"]]],
+        "result": "ssssssssssssss"
     }
 ]

@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": "X",
+    "result": 10
+  },
+  {
+    "arguments": "I",
+    "result": 1
+  },
+  {
+    "arguments": "V",
+    "result": 5
+  },
+  {
+    "arguments": "III",
+    "result": 3
+  },
+  {
+    "arguments": "IX",
+    "result": 9
+  },
+  {
+    "arguments": "CIX",
+    "result": 109
+  },
+  {
+    "arguments": "MMCXXXIV",
+    "result": 2134
+  },
+  {
+    "arguments": "MCMLXXXIV",
+    "result": 1984
+  }
+]

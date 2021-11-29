@@ -1,7 +1,7 @@
 /**
  * Create Layout class, which represents a page of
  * the application, and
- * 
+ *
  * 1. It has a protractor locator (.locator),
  *    e.g. by.css("body")
  * 2. It has a URL (.url), e.g. "/home" or "https://epam.com"
@@ -14,4 +14,19 @@
  * 7. It has a method to load the page, i.e. Navigates to
  *    the URL of it (.load())
  */
-module.exports = class Layout {}
+const Element = require('./Element.js');
+
+module.exports = class Layout extends Element {
+    constructor(name, url, locator) {
+        super(name, locator);
+        this.url = url;
+    }
+
+    setParent(parent) {
+        throw new Error('Parent can\'t be set for layout!');
+    }
+
+    load() {
+        return this.url;
+    }
+}

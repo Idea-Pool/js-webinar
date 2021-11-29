@@ -14,6 +14,11 @@ describe('Module 1 - Classification', () => {
         return expect(classification(101)).to.equal(0);
     });
 
+    it("should return 0 if score is not a number", () => {
+        return (expect(classification('word')).to.equal(0) &&
+                expect(classification(true)).to.equal(0));
+    });
+
     const scores = [
         [0, 1], [58, 1], [59, 1],
         [60, 2], [61, 2], [68, 2], [69, 2],
