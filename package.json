@@ -5,7 +5,7 @@
   "scripts": {
     "test:module-1": "mocha module-1/test/**/*.spec.js",
     "test:module-2": "mocha module-2/test/**/*.spec.js",
-    "test:module-3": "mocha module-3/test/**/*.spec.js",
+    "test:module-3": "npx playwright test --headed",
     "test:module-4": "mocha module-4/test/**/*.spec.js",
     "test:module-5": "cucumber-js module-5/features/EPAM.feature --require module-5/step_definitions/*.js",
     "test:plus": "mocha plus/test/**/*.spec.js"
@@ -21,9 +21,13 @@
   },
   "homepage": "https://github.com/szikszail/js-webinar#readme",
   "dependencies": {
+    "@cucumber/cucumber": "^7.3.2",
     "chai": "^4.2.0",
-    "cucumber": "^6.0.5",
-    "mocha": "^7.0.0",
-    "sinon": "^8.0.4"
+    "mocha": "^9.2.1",
+    "playwright": "^1.19.2",
+    "sinon": "^13.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.19.2"
   }
 }
