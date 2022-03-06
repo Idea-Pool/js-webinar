@@ -112,7 +112,7 @@ test.describe("Community page", () => {
         await ideaPoolPage.goto();
     });
 
-    test.only("should load in", async () => {
+    test("should load in", async () => {
         await expect(ideaPoolPage.logo).toBeVisible();
         await expect(ideaPoolPage.title).toHaveText("Idea Pool");
         await expect(ideaPoolPage.subscribeButton).toBeVisible();
