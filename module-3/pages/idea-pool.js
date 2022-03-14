@@ -1,3 +1,5 @@
+const Header = require("../components/header");
+
 module.exports = class IdeaPoolPage {
 
     constructor(page) {
@@ -8,6 +10,7 @@ module.exports = class IdeaPoolPage {
         this.subscribeButton = page.locator(".subscription");
         this.topics = page.locator(".evnt-community-topic");
         this.members = page.locator(".evnt-team-column");
+        this.header = new Header(page);
     }
 
     goto() {

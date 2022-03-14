@@ -17,7 +17,7 @@ const EVENT_ITEMS = [
     "All Events",
     "Speakers",
     "Calendar"
-]
+];
 
 test.describe("Main page", () => {
     test.beforeEach(async ({ page }) => {
@@ -112,9 +112,11 @@ test.describe("Community page", () => {
         await ideaPoolPage.goto();
     });
 
-    test("should load in", async () => {
+    test.only("should load in", async () => {
         await expect(ideaPoolPage.logo).toBeVisible();
         await expect(ideaPoolPage.title).toHaveText("Idea Pool");
+        await expect(ideaPoolPage.header.main).toBeVisible();
+        await expect(ideaPoolPage.header.elements).toHaveText([...HEADER_ITEMS]);
         await expect(ideaPoolPage.subscribeButton).toBeVisible();
         expect(await ideaPoolPage.topicCount()).toBeGreaterThan(0);
         await expect(ideaPoolPage.members).toHaveCount(3);
