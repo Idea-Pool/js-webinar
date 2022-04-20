@@ -16,6 +16,6 @@ describe.only('calc', () => {
      *     .minus(3)
      *     .times(6).v // 24
      */
-    // TODO: write test cases to test calculator
+    // TODO: write test cases to test the calculator
 
 });

@@ -1,5 +1,5 @@
 /**
- * It determines, whether the given array is sorted in
+ * It determines whether the given array is sorted in
  * alphabetically ascending order.
  * 
  * It ignores
