@@ -1,5 +1,5 @@
 /**
- * Create Element class, which represents an element of
+ * Create an Element class that represents an element of
  * the application, and
  * 
  * 1. It has a protractor locator (.locator),
@@ -14,5 +14,8 @@
  *       in it's children (recursively) the Element with
  *       the given name or throws an Erorr if it cannot
  *       find the element
+ * 
+ * Use Protractor API to retrieve element
+ * @see {@link https://www.protractortest.org/#/api?view=ElementFinder}
  */
-module.exports = class Element {}
+module.exports = class Element { }
