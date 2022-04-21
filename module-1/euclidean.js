@@ -10,10 +10,10 @@ function euclidean(a, b) {
     let gcd;
     /*
      * Your task is to compute the greatest common divisor of
-     * the numbers given in a and b variables, using the
+     * the numbers are given in a and b variables, using the
      * Euclidean algorithm (https://en.wikipedia.org/wiki/Euclidean_algorithm).
-     * If you have the result, assign it to the variable, called gcd.
-     * Also take into consideration the documentation of the function!
+     * If you have the result, assign it to the gcd variable.
+     * Also, take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
 

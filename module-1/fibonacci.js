@@ -12,7 +12,7 @@ function fibonacci(n) {
      * Fibonacci sequence.
      * https://en.wikipedia.org/wiki/Fibonacci_number
      * Store the value in the nThFibonacci variable.
-     * Also take into consideration the documentation of the function!
+     * Also, take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
 

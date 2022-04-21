@@ -1,31 +1,54 @@
 class Calc {
+    /**
+     * @constructor
+     * @param {number} v 
+     */
     constructor(v) {
         this.v = +v;
     }
 
+    /**
+     * @param {number} n 
+     * @returns {Calc}
+     */
     add(n) {
         this.v += n;
         return this;
     }
 
+    /**
+     * @param {number} n 
+     * @returns {Calc}
+     */
     minus(n) {
         this.v -= n;
         return this;
     }
 
+    /**
+     * @param {number} n 
+     * @returns {Calc}
+     */
     times(n) {
         this.v *= n;
         return this;
     }
 
+    /**
+     * @returns {Calc}
+     */
     sqrt() {
         if (this.v < 0) {
-            throw new Error('Square root of negative value cannot be determined!');
+            throw new Error('Square root of a negative value cannot be determined!');
         }
         this.v = Math.sqrt(this.v);
         return this;
     }
 
+    /**
+     * @param {number} n 
+     * @returns {Calc}
+     */
     divide(n) {
         if (n === 0) {
             throw new Error('Division by 0 is not possible!');
@@ -34,16 +57,27 @@ class Calc {
         return this;
     }
 
+    /**
+     * @param {number} n 
+     * @returns {Calc}
+     */
     modulo(n) {
         this.v %= n;
         return this;
     }
 
+    /**
+     * @returns {string}
+     */
     toString() {
         return String(this.v);
     }
 }
 
+/**
+ * @param {number} n 
+ * @returns {Calc}
+ */
 function calc(n) {
     return new Calc(n);
 }

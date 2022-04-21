@@ -1,6 +1,6 @@
 /**
- * It recieves a Roman number (as string)
- * and converts it to it's Arabic (decimal) equivalent.
+ * It receives a Roman number (as string)
+ * and converts it to its Arabic (decimal) equivalent.
  *
  * @see https://en.wikipedia.org/wiki/Roman_numerals
  * @param {string} roman

@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/szikszail/js-webinar.git"
+    "url": "git+https://github.com/idea-pool/js-webinar.git"
   },
-  "author": "Laszlo Szikszai <Laszlo_Szikszai@epam.com>",
+  "author": "Idea Pool <ideapool@epam.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/szikszail/js-webinar/issues"
+    "url": "https://github.com/idea-pool/js-webinar/issues"
   },
-  "homepage": "https://github.com/szikszail/js-webinar#readme",
+  "homepage": "https://github.com/idea-pool/js-webinar#readme",
   "dependencies": {
     "chai": "^4.2.0",
     "cucumber": "^6.0.5",

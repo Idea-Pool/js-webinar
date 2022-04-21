@@ -4,7 +4,7 @@
  * those order and value, in all levels.
  * 
  * It prints out a message in case of any
- * difference in any array, using console.warn!
+ * difference in an array, using the console.warn!
  * 
  * @param {Array} first The first array
  * @param {Array} second The second array

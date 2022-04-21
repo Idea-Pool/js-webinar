@@ -20,21 +20,21 @@ describe('Layout Class', () => {
     });
 
     it('should have stored locator', () => {
-        const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+        const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
         expect(page.locator).not.to.be.undefined;
         expect(page.locator.css).to.equal('body');
     });
 
     it('should have stored name', () => {
-        const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+        const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
         expect(page.name).not.to.be.undefined;
         expect(page.name).to.equal('Home');
     });
 
     it('should have stored URL', () => {
-        const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+        const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
         expect(page.url).not.to.be.undefined;
         expect(page.url).to.equal('http://epam.com');
@@ -42,15 +42,15 @@ describe('Layout Class', () => {
 
     describe('Parent', () => {
         it('should not have parent by default', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
             expect(page.parent).not.to.be.undefined;
             expect(page.parent).to.be.null;
         });
 
         it('should throw error if parent is set', () => {
-            const element = new Layout('Title', {css: 'h1'});
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+            const element = new Layout('Title', { css: 'h1' });
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
             expect(page.setParent).not.to.be.undefined;
             expect(() => page.setParent(element)).to.throw();
@@ -59,15 +59,15 @@ describe('Layout Class', () => {
 
     describe('Children', () => {
         it('should not have children by default', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
             expect(page.children).not.to.be.undefined;
             expect(page.children).to.eql({});
         });
 
         it('should have method to add children', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
-            const child = new Element('Title', {css: 'h1'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
+            const child = new Element('Title', { css: 'h1' });
 
             expect(page.addChildren).not.to.be.undefined;
 
@@ -77,8 +77,8 @@ describe('Layout Class', () => {
         });
 
         it('should not add children twice', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
-            const child = new Element('Title', {css: 'h1'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
+            const child = new Element('Title', { css: 'h1' });
 
             page.addChildren(child);
             expect(() => page.addChildren(child)).to.throw();
@@ -87,7 +87,7 @@ describe('Layout Class', () => {
 
     describe('Get', () => {
         it('should have method to retrieve root element', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
             expect(page.get).not.to.be.undefined;
 
@@ -98,8 +98,8 @@ describe('Layout Class', () => {
         });
 
         it('should have method to retrieve children element by name', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
-            const child = new Element('Title', {css: 'h1'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
+            const child = new Element('Title', { css: 'h1' });
             page.addChildren(child);
 
             const pElement = page.get('Title');
@@ -109,10 +109,10 @@ describe('Layout Class', () => {
         });
 
         it('should have method to retrieve nested children element by name', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
-            const header = new Element('Header', {css: 'header'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
+            const header = new Element('Header', { css: 'header' });
             page.addChildren(header);
-            const child = new Element('Title', {css: 'h1'});
+            const child = new Element('Title', { css: 'h1' });
             header.addChildren(child);
 
             const pElement = page.get('Title');
@@ -122,8 +122,8 @@ describe('Layout Class', () => {
         });
 
         it('should throw error if child element is not found', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
-            const child = new Element('Title', {css: 'h1'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
+            const child = new Element('Title', { css: 'h1' });
             page.addChildren(child);
 
             expect(() => page.get('Footer')).to.throw();
@@ -132,7 +132,7 @@ describe('Layout Class', () => {
 
     describe('Load', () => {
         it('should have method to load the page by URL', () => {
-            const page = new Layout('Home', 'http://epam.com', {css: 'body'});
+            const page = new Layout('Home', 'http://epam.com', { css: 'body' });
 
             expect(page.load).not.to.be.undefined;
             expect(page.load()).to.equal('http://epam.com');
