@@ -51,6 +51,25 @@
     {
         "arguments": [
             [
+                "This is, the second item",
+                "This is the first item"
+            ]
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [
+                "This is the first item",
+                "This is, the second item"
+            ],
+            ","
+        ],
+        "result": true
+    },
+    {
+        "arguments": [
+            [
                 "Hello World! How are you? Fine!",
                 "Hello World How! Are you fine?"
             ],
