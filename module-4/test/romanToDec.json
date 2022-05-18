@@ -1,0 +1,35 @@
+[
+    {
+        "arguments": "i",
+        "result": 1
+    },
+    {
+        "arguments": "iv",
+        "result": 4
+    },
+    {
+        "arguments": "xcix",
+        "result": 99
+    },
+    {
+        "arguments": "dlv",
+        "result": 555
+    },
+    {
+        "arguments": "mmmcxc",
+        "result": 3190
+    },
+
+    {
+        "arguments": "mmmcmxcix",
+        "result": 3999
+    },
+    {
+        "arguments": "cdq",
+        "result": false
+    },
+    {
+        "arguments": "qqq",
+        "result": false
+    }
+]
