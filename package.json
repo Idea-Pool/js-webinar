@@ -7,7 +7,7 @@
     "test:module-2": "mocha module-2/test/**/*.spec.js",
     "test:module-3": "npx playwright test --headed",
     "test:module-4": "mocha module-4/test/**/*.spec.js",
-    "test:module-5": "cucumber-js --require module-5/config/cucumber.conf.js module-5/features/*.feature --require module-5/step_definitions/*.js",
+    "test:module-5": "cucumber-js --require module-5/config/cucumber.conf.js module-5/features/*.feature --require module-5/step_definitions/*.js -f @cucumber/pretty-formatter",
     "test:plus": "mocha plus/test/**/*.spec.js"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "sinon": "^13.0.1"
   },
   "devDependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0-alpha.2",
     "@playwright/test": "^1.19.2"
   }
 }

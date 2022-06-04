@@ -3,6 +3,6 @@ Feature: We are community site
     I want to write test for We are community site
     So that I can practice Cucumber
 
-    Scenario: Search for a job
+    Scenario: Search for an event on the We are community site
     Given the WeAreCommunity portal opened
     Then the WeAreCommunity page should be loaded
