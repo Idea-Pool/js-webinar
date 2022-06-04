@@ -3,7 +3,7 @@ const {
   BeforeAll,
   AfterAll,
   After,
-  setDefaultTimeout
+  setDefaultTimeout,
 } = require("@cucumber/cucumber");
 const { chromium } = require("playwright");
 

@@ -4,11 +4,10 @@
 
 | # | Action | Expected |
 |--:|:-------|:---------|
-| 1 | Open EPAM career page | <ol><li>The page is opened</li><li>The search form is visible</li></ol> |
-| 2 | <ol><li>Click on Location filter box</li><li>Select `Country` / `City`</li></ol> | The location filter box should contain `City` | 
-| 3 | <ol><li>Click on Department filter box</li><li>Select `Department`</li></ol> | The department filter box should contain `Department` tile |
-| 4 | Search button is clicked | <ol><li>The `PositionName` position should be visible</li><li>The department of the position should be `Department`</li><li>The location of the position should be `City`, `Country`</li><li>There should be an Apply button for the position</li></ol> |
-| 5 | Click on Apply button of the position | <ol><li>The job description should contain `City`</li><li>The job description should contain `PositionName`</li></ol> |
+| 1 | Open We are community page | <ol><li>The page should be opened</li><li>The Communities button in the header should be visible</li></ol> |
+| 2 | <ol><li>Click on the `Communities` button</li><li>Type `Idea Pool` term into the search bar</li></ol> | <ol><li>The `Communities` list and the search bar should be visible</li> <li> The `Idea pool` community should be visible</li></ol> | 
+| 3 | Click on the `Idea pool` community card | <ol><li>Community overview page shold be loaded</li><li>The `Idea pool` logo should be visible</li><li>The core team should be visible</li><li>The articles section should be visible</li></ol> |
+| 4 | <ol><li>A random article title is saved in the memory</li><li> The same article is clicked on</li></oi> | <ol><li>The article page should be opened</li><li>The title of the article should be ok (the same as the title in the memory)</li><li>The article subtitle should be visible</li><li>The `Say "Thank you"` button should be visible</li></ol> |
 
 ### Test data
 
