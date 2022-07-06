@@ -15,7 +15,41 @@
  *       the given name or throws an Erorr if it cannot
  *       find the element
  * 
+ * 
  * Use Protractor API to retrieve element
  * @see {@link https://www.protractortest.org/#/api?view=ElementFinder}
  */
-module.exports = class Element { }
+module.exports = class Element { 
+    constructor(name, locator){
+        this.locator = locator;
+        this.name = name;
+
+        this.parent = null;
+        this.children = {};
+    }
+
+    setParent(parent){
+        this.parent = parent;
+    }
+
+    addChildren(child){
+        if(this.children.hasOwnProperty(child.name)){
+            throw new Error(child.name + " is already added!");
+        }
+        this.children[child.name] = child;
+        
+    }
+
+    get (){
+
+        if(this.name = child.name){
+            return this.name
+        } else{
+            throw new Error("cannot find");
+        }
+        
+       
+
+    }
+}
+

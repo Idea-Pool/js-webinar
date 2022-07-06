@@ -14,4 +14,29 @@
  * 7. It has a method to load the page, i.e. Navigates to
  *    the URL of it (.load())
  */
-module.exports = class Layout {}
+
+ const Element = require("./Element"); 
+
+
+ 
+module.exports = class Layout extends Element{
+
+        constructor(locator, name, url) {
+            super(locator, name, url);
+            
+            
+            this.name = 'Home';
+            this.url = "http://epam.com";
+
+            this.parent = null;
+            this.children = {};
+        }
+
+        addChildren(child){
+            if(this.children.hasOwnProperty(child.name)){
+                throw new Error(child.name + " is already added!");
+            }
+            this.children[child.name] = child;
+        }
+        
+}

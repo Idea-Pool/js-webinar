@@ -16,4 +16,24 @@
  * Use Protractor API to retrieve elements
  * @see {@link https://www.protractortest.org/#/api?view=ElementArrayFinder}
  */
-module.exports = class Elements { }
+const Element = require("./Element");
+
+module.exports = class Elements extends Element { 
+
+    constructor(name, locator){
+        super(name, locator);
+
+        this.children = null;
+    }
+
+    addChildren() {
+        throw new Error("Elements cannot have children")
+    }
+
+    all() {
+        ;
+    }   
+}
+
+
+
