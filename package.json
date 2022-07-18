@@ -21,9 +21,9 @@
   },
   "homepage": "https://github.com/idea-pool/js-webinar#readme",
   "dependencies": {
-    "chai": "^4.2.0",
-    "cucumber": "^6.0.5",
-    "mocha": "^7.0.0",
-    "sinon": "^8.0.4"
+    "chai": "^4.3.6",
+    "cucumber": "^6.0.7",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
   }
 }
