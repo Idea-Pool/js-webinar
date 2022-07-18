@@ -20,6 +20,9 @@
     "url": "https://github.com/idea-pool/js-webinar/issues"
   },
   "homepage": "https://github.com/idea-pool/js-webinar#readme",
+  "engines": {
+    "node": ">=12"
+  },
   "dependencies": {
     "chai": "^4.3.6",
     "cucumber": "^6.0.7",

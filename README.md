@@ -5,7 +5,7 @@ Tasks of JS webinar.
 ## Requirements
 
 * Git
-* NodeJS 8 (6 is also supported)
+* NodeJS 12+
 
 ## Setup
 
