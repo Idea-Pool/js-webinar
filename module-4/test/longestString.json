@@ -12,8 +12,8 @@
         "result": ""
     },
     {
-        "arguments": [["foo", "baar"]],
-        "result": "baar"
+        "arguments": [["fooo", "bar"]],
+        "result": "fooo"
     },
     {
         "arguments": [["foo", "arm"]],
