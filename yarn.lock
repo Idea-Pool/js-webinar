@@ -3,12 +3,12 @@
 
 
 "@babel/runtime-corejs2@^7.2.0":
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.8.0.tgz#bdcd5d52c8c69ea4bd2dce62dc4fcad6159b2587"
-  integrity sha512-GsSb5MFUX2Q+zVUa7d4/8EXz7KPDuw0uNzY1sdBV7kvzdHzotxqi0HQlqesDRcffpvqcr+ZX8N+mMnb7/osExw==
+  version "7.26.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime-corejs2/-/runtime-corejs2-7.26.10.tgz#46c1289c6f181391235fb00af13e6c246cb5c8ae"
+  integrity sha512-JfoPiD7f/vvd/PaOfu5cr9CyzwDMPg4T0nX3MQr6IgTq49DhjvUcmjmjA7j6+xih1Evq+QKZnge1SoIlYozv/Q==
   dependencies:
-    core-js "^2.6.5"
-    regenerator-runtime "^0.13.2"
+    core-js "^2.6.12"
+    regenerator-runtime "^0.14.0"
 
 "@sinonjs/commons@^1.6.0", "@sinonjs/commons@^1.7.0":
   version "1.7.0"
@@ -289,10 +289,10 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-core-js@^2.6.5:
-  version "2.6.9"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.9.tgz#6b4b214620c834152e179323727fc19741b084f2"
-  integrity sha512-HOpZf6eXmnl7la+cUdMnLvUxKNqLUzJvgIziQ0DiF3JwSImNphIqdGqzj6hIKyX04MmV0poclQ7+wjWvxQyR2A==
+core-js@^2.6.12:
+  version "2.6.12"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -1348,10 +1348,10 @@ readdirp@~3.6.0:
   dependencies:
     picomatch "^2.2.1"
 
-regenerator-runtime@^0.13.2:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
-  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
+regenerator-runtime@^0.14.0:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.14.1.tgz#356ade10263f685dda125100cd862c1db895327f"
+  integrity sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==
 
 regexp.prototype.flags@^1.4.3:
   version "1.4.3"
