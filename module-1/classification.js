@@ -11,7 +11,6 @@
  * @returns {number} grade or 0 if any arguments are not proper
  */
 function grade(score) {
-    let gradeOfStudent;
     /*
      * Your task is to calculate the grade of the student
      * based on his/her score which can be found in the
@@ -20,9 +19,6 @@ function grade(score) {
      * Store the grade in the gradeOfStudent variable.
      * Also take into consideration the documentation of the function!
      */
-    // PLACE YOUR CODE BETWEEN THIS...
-
-    // ...AND THIS COMMENT LINE!
-    return gradeOfStudent;
+    return (score > 100 ? 0 : score >= 90 ? 5 : score >= 80 ? 4 : score >= 70 ? 3 : score >= 60 ? 2 : score < 0 ? 0 : 1);
 }
 module.exports = grade;
