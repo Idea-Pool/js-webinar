@@ -21,7 +21,7 @@ function grade(score) {
      * Also take into consideration the documentation of the function!
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    gradeOfStudent = (score >= 0 && score <= 100) ? Math.max(Math.min(Math.floor(score / 10) - 4, 5), 1) : 0;
     // ...AND THIS COMMENT LINE!
     return gradeOfStudent;
 }
